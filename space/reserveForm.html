@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어</title>
+
+      <meta name="description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="">
+      <meta property="og:title" content="인천 ICT 이노베이션스퀘어">
+      <meta property="og:description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:image" content="/resource/images/main_thumb.webp">
+      <meta name="twitter:card" content="summary_large_image">
+
+      <link rel="shortcut icon" href="/resource/images/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/sub.css">
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+
+   <body>
+      <div id="wrap">
+         <!-- header -->
+         <header id="hd"></header>
+
+         <!-- 콘텐츠 영역 -->
+         <div id="content" class="container">
+            <div class="inner2">
+               <div class="sub_layout">
+                  <!-- ===== 좌측 사이드 메뉴 ===== -->
+                  <div class="aside" aria-label="서브 메뉴">
+                     <div class="tit">
+                        <strong>공간 · 디바이스</strong>
+                     </div>
+                     <ul class="aside_nav_list">
+                        <li class="aside_nav_item active">
+                           <a href="/space/place.html">공간 소개</a>
+                        </li>
+                        <li class="aside_nav_item">
+                           <a href="/space/device.html">디바이스 대여</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <!-- ===== 우측 콘텐츠 영역 ===== -->
+                  <main class="sub_content">
+                     <div class="sub_page_head">
+                        <h4 class="sub_page_tit">공간 예약</h4>
+                        <hr class="sub_page_line">
+                     </div>
+
+                     <!-- 유의사항 -->
+                     <div class="notice_box">
+                        <div class="notice_box_head">
+                           <span class="icon-box st2 s48">
+                              <i class="icon icon-cube"></i>
+                           </span>
+                           <strong >공간 사용에 대한 유의사항 안내</strong>
+                        </div>
+                        <ol class="notice_box_list st2">
+                           <li>공간 예약 시, 신청 목적을 반드시 상세히 기재해 주시기 바랍니다.</li>
+                           <li>공간 예약은 신청 후 관리자 확인을 거쳐 확정됩니다.</li>
+                        </ol>
+                     </div>
+
+                     <!-- 예약 정보 입력 -->
+                     <div class="form_head">
+                        <h4 class="form_tit">예약 정보 입력</h4>
+                        <p class="form_required_note"><em>*</em> 는 필수 입력입니다.</p>
+                     </div>
+
+                     <div class="form_box">
+                        <table class="form_table">
+                           <tbody>
+                              <tr>
+                                 <th>선택한 공간<span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="text" class="inp_st1" value="회의실A" readonly>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>예약 일시<span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="form_inp_row">
+                                       <input type="text" class="inp_st1" value="2026-03-03" readonly>
+                                       <input type="text" class="inp_st1" value="13:00-14:00" readonly>
+                                       <button type="button" class="btn btn-sub btn-sm" onclick="location.href='/space/reserve.html'">날짜 변경</button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>이름<span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="text" class="inp_st1" placeholder="김인천" value="김인천">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>휴대폰 번호<span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="tel" class="inp_st1" placeholder="01012345678" value="01012345678">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>이메일 주소<span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="email" class="inp_st1" placeholder="example@email.com" value="example@email.com">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>사용 인원<span class="req_mark">*</span></th>
+                                 <td>
+                                    <select class="inp_st1">
+                                       <option value=""selected>사용 인원</option>
+                                       <option value="1">1명</option>
+                                       <option value="2">2명</option>
+                                       <option value="3">3명</option>
+                                       <option value="4">4명</option>
+                                       <option value="5" >5명</option>
+                                       <option value="6">6명</option>
+                                       <option value="7">7명</option>
+                                       <option value="8">8명</option>
+                                       <option value="9">9명</option>
+                                       <option value="10">10명</option>
+                                    </select>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>신청 목적<span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="form_inp_row">
+                                       <select class="inp_st1" id="purposeType">
+                                          <option value="" selected>신청 목적</option>
+                                          <option value="1">회의</option>
+                                          <option value="2">미팅</option>
+                                          <option value="3">개인작업</option>
+                                          <option value="4">교육</option>
+                                          <option value="5">기타</option>
+                                       </select>
+                                       <!-- 기타 시 오픈 -->
+                                       <input type="text" id="etcType" class="inp_st1 wd100" placeholder="기타 신청 목적을 입력해주세요" style="display: none;">
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <!-- 이용약관 -->
+                     <div class="terms_accordion mt20">
+                        <div class="terms_accordion_head" id="termsHead">
+                           <strong>ICT 이용약관</strong>
+                           <span class="icon-box" id="termsArrow"><i class="icon icon-chevron_up"></i></span>
+                        </div>
+                        <div class="terms_accordion_body" id="termsBody" style="display: block;">
+                           제1조 (목적)<br>
+                           본 약관은 인천 ICT 이노베이션스퀘어(이하 "기관")가 제공하는 공간 예약 서비스 이용에 관한 기본적인 사항을 규정함을 목적으로 합니다.<br><br>
+                           제2조 (이용신청)<br>
+                           공간 예약은 온라인 신청 후 관리자 확인을 거쳐 확정됩니다. 허위 정보 기재 시 예약이 취소될 수 있습니다.<br><br>
+                           제3조 (취소 및 환불)<br>
+                           예약 취소는 이용일 1일 전까지 가능합니다. 이용 당일 취소 시에는 별도 문의 바랍니다.<br><br>
+                           제4조 (이용 수칙)<br>
+                           공간 이용 시 타 이용자에게 불편을 주는 행위를 삼가 주시기 바랍니다. 시설 훼손 시 배상 책임이 발생할 수 있습니다.
+                        </div>
+                        <div class="terms_agree_row">
+                           <input type="checkbox" class="terms_checkbox" id="termsAgree">
+                           <label for="termsAgree" class="terms_agree_label">
+                              <span class="req_mark">[필수]</span> 모든 약관을 확인하고 전체 동의합니다.
+                           </label>
+                        </div>
+                     </div>
+
+                     <!-- 예약하기 버튼 -->
+                     <div class="btn_submit_wrap">
+                        <button type="button" class="btn btn-lg btn-main wd20" onclick="openAlertPopup();">예약하기</button>
+                     </div>
+
+                  </main>
+               </div>
+            </div>
+         </div>
+
+         <footer id="ft"></footer>
+      </div>
+
+      <div class="popup_wrap" id="alertPopup">
+			<div class="popup popup_sm">
+				<div class="popup_cont">
+					<div class="popup_head">
+						<button type="button" class="btn-close" onclick="closeAlertPopup();"><span class="icon-box"><i class="icon icon-x"></i></span></button>
+					</div>
+					<div class="popup_body">
+						<div class="alert">
+                     <span class="icon-box s96 st1">
+                        <i class="icon icon-checkcircle_line"></i>
+                     </span>
+							<h4>공간 예약이 완료되었습니다</h4>
+							<p>관리자의 처리 현황은 마이페이지에서 확인해주세요.</p>
+						</div>
+					</div>
+					<div class="popup_btn_wrap">
+						<div class="btn_wrap center">
+							<button type="button" class="btn btn-line btn-lg btn-round" onclick="closeAlertPopup()">확인</button>
+							<a href="/my/spaceHistory.html" class="btn btn-line-primary btn-lg btn-round">마이페이지 이동하기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+      <script>
+         // 이용약관 아코디언
+         document.getElementById('termsHead').addEventListener('click', function() {
+            const body = document.getElementById('termsBody');
+            const arrow = document.getElementById('termsArrow');
+            const isOpen = body.style.display === 'block';
+            body.style.display = isOpen ? 'none' : 'block';
+            arrow.classList.toggle('open', !isOpen);
+         });
+
+         function openAlertPopup() {
+            document.getElementById('alertPopup').classList.add('open');
+            document.body.style.overflow = 'hidden';
+         }
+         function closeAlertPopup() {
+            document.getElementById('alertPopup').classList.remove('open');
+            document.body.style.overflow = '';
+         }
+
+         
+         $('#purposeType').on('change', function () {
+            if ($(this).val() === '5') {
+               $('#etcType').show();
+            } else {
+               $('#etcType').hide().val('');
+            }
+         });
+      </script>
+   </body>
+</html>

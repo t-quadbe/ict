@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어</title>
+
+      <meta name="description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="">
+      <meta property="og:title" content="인천 ICT 이노베이션스퀘어">
+      <meta property="og:description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:image" content="/resource/images/main_thumb.webp">
+      <meta name="twitter:card" content="summary_large_image">
+
+      <link rel="shortcut icon" href="/resource/images/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/sub.css">
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+
+   <body>
+      <div id="wrap">
+         <header id="hd"></header>
+
+         <div id="content" class="container">
+            <main class="content main">
+
+               <div class="login_wrap">
+
+                  <!-- ===== SECTION 1: 입력 폼 ===== -->
+                  <div class="find_section active" id="findSection">
+                     <h1>아이디 찾기</h1>
+
+                     <p class="find_desc">가입 시 등록한 이름과 이메일 주소를 입력해주세요.</p>
+
+                     <div class="find_form">
+                        <div class="inp_wrap">
+                           <input type="text" id="findName" class="inp_st1 wd100" placeholder="이름을 입력해주세요" autocomplete="name">
+                        </div>
+                        <div class="inp_wrap">
+                           <input type="email" id="findEmail" class="inp_st1 wd100" placeholder="이메일 주소를 입력해주세요" autocomplete="email">
+                        </div>
+                     </div>
+
+                     <div class="btn_wrap">
+                        <button type="button" class="btn btn-lg btn-main" id="findIdBtn">아이디 찾기</button>
+                     </div>
+
+                     <div class="login_util" style="justify-content: center;">
+                        <a href="/login.html">로그인</a>
+                        <a href="/findPW.html">비밀번호 찾기</a>
+                     </div>
+                  </div>
+
+                  <!-- ===== SECTION 2: 결과 화면 ===== -->
+                  <div class="find_section" id="resultSection">
+                     <h1>아이디 찾기</h1>
+
+                     <div class="find_result_box">
+                        <div class="find_result_icon">
+                           <span class="icon-box st2 s96"><i class="icon-line icon-usercheck_line"></i></span>
+                        </div>
+                        <p class="find_result_label">회원님의 아이디는</p>
+                        <p class="find_result_id" id="resultId">incheon@gmail.com</p>
+                        <p class="find_result_label">입니다</p>
+                     </div>
+
+                     <div class="btn_wrap">
+                        <a href="/login.html" class="btn btn-lg btn-main">로그인</a>
+                        <a href="/findPW.html" class="btn btn-lg btn-line-primary">비밀번호 찾기</a>
+                     </div>
+
+                     <div class="login_util" style="justify-content: center;">
+                        <button type="button" class="btn-text" id="retryBtn">다시 찾기</button>
+                     </div>
+                  </div>
+
+                  <!-- ===== SECTION 3: 결과 없음 ===== -->
+                  <div class="find_section" id="notFoundSection">
+                     <h1>아이디 찾기</h1>
+
+                     <div class="find_result_box find_result_box--fail">
+                        <div class="find_result_icon">
+                           <span class="icon-box st3 s96"><i class="icon-line icon-error_fill"></i></span>
+                        </div>
+                        <p class="find_result_label">일치하는 회원 정보가 없습니다.</p>
+                        <p class="find_result_sub">입력하신 이름 또는 이메일 주소를 다시 확인해주세요.</p>
+                     </div>
+
+                     <div class="btn_wrap">
+                        <button type="button" class="btn btn-lg btn-main" id="retryBtn2">다시 찾기</button>
+                     </div>
+
+                     <div class="login_util" style="justify-content: center;">
+                        <a href="/login.html">로그인</a>
+                        <a href="/signup.html">회원가입</a>
+                     </div>
+                  </div>
+
+               </div>
+            </main>
+         </div>
+
+         <footer id="ft"></footer>
+      </div>
+
+      <script>
+         function showSection(id) {
+            $('.find_section').removeClass('active');
+            $('#' + id).addClass('active');
+         }
+
+         $('#findIdBtn').on('click', function () {
+            showSection('resultSection');
+         });
+
+         $('#retryBtn, #retryBtn2').on('click', function () {
+            showSection('findSection');
+         });
+      </script>
+   </body>
+</html>

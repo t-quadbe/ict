@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어</title>
+
+      <meta name="description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="">
+      <meta property="og:title" content="인천 ICT 이노베이션스퀘어">
+      <meta property="og:description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:image" content="/resource/images/main_thumb.webp">
+      <meta name="twitter:card" content="summary_large_image">
+
+      <link rel="shortcut icon" href="/resource/images/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/sub.css">
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+
+   <body>
+      <div id="wrap">
+         <!-- header -->
+         <header id="hd"></header>
+
+         <!-- 콘텐츠 영역 -->
+         <div id="content" class="container">
+            <div class="inner2">
+               <div class="sub_layout">
+                  <!-- ===== 좌측 사이드 메뉴 ===== -->
+                  <div class="aside" aria-label="서브 메뉴">
+                     <div class="tit">
+                        <strong>ICT 콤플렉스</strong>
+                     </div>
+                     <ul class="aside_nav_list">
+                        <li class="aside_nav_item ">
+                           <a href="/ict/intro.html">인천 ICT<br>이노베이션 스퀘어</a>
+                        </li>
+                        <li class="aside_nav_item ">
+                           <a href="/ict/education.html">교육장 소개</a>
+                        </li>
+                        <li class="aside_nav_item ">
+                           <a href="/ict/guide.html">운영 안내</a>
+                        </li>
+                        <li class="aside_nav_item active">
+                           <a href="/ict/location.html">오시는 길</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <!-- ===== 우측 콘텐츠 영역 ===== -->
+                  <main class="sub_content">
+                     <div class="sub_page_head">
+                        <h4 class="sub_page_tit">오시는 길</h4>
+                        <hr class="sub_page_line">
+                     </div>
+
+                     <!-- 거점 탭 버튼 -->
+                     <div class="tab_st2 wd100 mb15">
+                        <ul class="tab_btn tab_btn3" >
+                           <li>
+                               <button class="btn active" data-tab="namdong" role="tab" aria-selected="true">남동 ICT 콤플렉스</button>
+                           </li>
+                           <li>
+                               <button class="btn" data-tab="michuhol" role="tab" aria-selected="false">미추홀 교육장</button>
+                           </li>
+                           <li>
+                               <button class="btn" data-tab="songdo" role="tab" aria-selected="false">송도 교육장</button>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <!-- 지도 -->
+                     <div class="location_map_wrap">
+                        <iframe id="locationMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.8102177568408!2d126.71094099999999!3d37.4652026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7bf6bec97ae9%3A0x3f826402285f14f3!2z7J247LKc6rSR7Jet7IucIOuCqOuPmeq1rCDrsLHrspTroZwgMzU3!5e0!3m2!1sko!2skr!4v1782461628943!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+
+                     <!-- 교통 정보 -->
+                     <div class="location_info_list mt15" id="locationInfoList">
+                        <!-- JS로 렌더링 -->
+                     </div>
+
+                     <div class="guide_box mt30">
+                        <div class="guide_inner align_center">
+                           <span class="icon-box st3 s96">
+                              <i class="icon-line icon-call_line"></i>
+                           </span>
+                           <div class="txt_box">
+                              <strong>대표 문의</strong>
+                              <ol class="notice_box_list st2 mg0">
+                                 <li>전화: 032-260-2105</li>
+                                 <li>이메일: sgc@itp.or.kr</li>
+                              </ol>
+                           </div>
+                           <div class="plus_info">
+                              <span class="icon-box">
+                                 <i class="icon icon-information"></i>
+                              </span>
+                              <p>방문 전 운영시간과 교육 일정을 확인해 주세요.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </main>
+               </div>
+            </div>
+         </div>
+
+         <footer id="ft"></footer>
+      </div>
+
+      <script>
+         // ===== 거점별 데이터 =====
+         var locationData = {
+            namdong: {
+               mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.8102177568408!2d126.71094099999999!3d37.4652026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7bf6bec97ae9%3A0x3f826402285f14f3!2z7J247LKc6rSR7Jet7IucIOuCqOuPmeq1rCDrsLHrspTroZwgMzU3!5e0!3m2!1sko!2skr!4v1782461628943!5m2!1sko!2skr',
+               info: [
+                  {
+                     icon: 'icon-mappin_aw_fill',
+                     title: '위치 안내',
+                     content: '<span class="txt">인천광역시 남동구 간석3동 백범로 357 인천회관 3층</span>'
+                  },
+                  {
+                     icon: 'icon-bus',
+                     title: '버스 이용 시',
+                     content: '<div class="trans"><span class="badge blue">간선</span><span class="txt">15, 30, 34, 62, 103-1, 303-1</span></div><div class="trans"><span class="badge green">마을</span><span class="txt">538, 533, 534</span></div>'
+                  },
+                  {
+                     icon: 'icon-subway',
+                     title: '지하철 이용 시',
+                     content: '<div class="trans"><span class="badge blue round">인천 1호선</span><span class="txt"><b>인천 1호선</b> 간석오거리역 3번 출구 244m</span></div>'
+                  }
+               ]
+            },
+            michuhol: {
+               mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.123456789012!2d126.6500000000000!3d37.4700000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c0000000001%3A0x0000000000000001!2z66as7Leo7ZSE7IKs64KY67KE7IiY7KCc7ZqM!5e0!3m2!1sko!2skr!4v1782200347175!5m2!1sko!2skr',
+               info: [
+                  {
+                     icon: 'icon-mappin_aw_fill',
+                     title: '위치 안내',
+                     content: '<span class="txt">인천광역시 미추홀구 도화동 592-5 인천IT타워 16층</span>'
+                  },
+                  {
+                     icon: 'icon-bus',
+                     title: '버스 이용 시',
+                     content: '<div class="trans"><span class="badge blue">간선</span><span class="txt">2, 4, 15, 21, 22, 23, 33, 63</span></div>'
+                  },
+                  {
+                     icon: 'icon-subway',
+                     title: '지하철 이용 시',
+                     content: '<div class="trans"><span class="badge blue round">1호선</span><span class="txt"><b>1호선</b> 도화역 1번 출구 도보 5분</span></div>'
+                  }
+               ]
+            },
+            songdo: {
+               mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.000000000000!2d126.6300000000000!3d37.3800000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c0000000002%3A0x0000000000000002!2z7IaU65GQ6rOg7KCc7ZqM!5e0!3m2!1sko!2skr!4v1782200347176!5m2!1sko!2skr',
+               info: [
+                  {
+                     icon: 'icon-mappin_aw_fill',
+                     title: '위치 안내',
+                     content: '<span class="txt">인천광역시 연수구 송도문화로 119</span>'
+                  },
+                  {
+                     icon: 'icon-bus',
+                     title: '버스 이용 시',
+                     content: '<div class="trans"><span class="badge blue">간선</span><span class="txt">16</span></div><div class="trans"><span class="badge green">마을</span><span class="txt">4403, 순환41, 순환42</span></div>'
+                  },
+                  {
+                     icon: 'icon-subway',
+                     title: '지하철 이용 시',
+                     content: '<div class="trans"><span class="badge blue round">인천 1호선</span><span class="txt"><b>수인분당선</b> 테크노파크역 도보 20분</span></div>'
+                  }
+               ]
+            }
+         };
+
+         // ===== 렌더링 함수 =====
+         function renderLocationInfo(tab) {
+            var data = locationData[tab];
+            if (!data) return;
+
+            // iframe 교체
+            document.getElementById('locationMap').src = data.mapSrc;
+
+            // 교통 정보 렌더링
+            var html = '';
+            data.info.forEach(function(item) {
+               html += '<div class="info_item">'
+                  + '<div class="info_tit">'
+                  + '<span class="icon-box st3 s48"><i class="icon ' + item.icon + '"></i></span>'
+                  + '<p>' + item.title + '</p>'
+                  + '</div>'
+                  + '<div class="info_cont">' + item.content + '</div>'
+                  + '</div>';
+            });
+            document.getElementById('locationInfoList').innerHTML = html;
+         }
+
+         // ===== 탭 버튼 이벤트 =====
+         document.querySelectorAll('.tab_btn3 .btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+               document.querySelectorAll('.tab_btn3 .btn').forEach(function(b) {
+                  b.classList.remove('active');
+                  b.setAttribute('aria-selected', 'false');
+               });
+               this.classList.add('active');
+               this.setAttribute('aria-selected', 'true');
+               renderLocationInfo(this.dataset.tab);
+            });
+         });
+
+         // ===== URL 해시로 초기 탭 지정 지원 (#namdong / #michuhol / #songdo) =====
+         (function() {
+            var hash = window.location.hash.replace('#', '');
+            var validTabs = ['namdong', 'michuhol', 'songdo'];
+            var initTab = validTabs.indexOf(hash) !== -1 ? hash : 'namdong';
+
+            // 탭 active 설정
+            document.querySelectorAll('.tab_btn3 .btn').forEach(function(btn) {
+               var isTarget = btn.dataset.tab === initTab;
+               btn.classList.toggle('active', isTarget);
+               btn.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+            });
+
+            renderLocationInfo(initTab);
+         })();
+      </script>
+   </body>
+</html>

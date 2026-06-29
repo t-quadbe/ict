@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어</title>
+
+      <meta name="description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="">
+      <meta property="og:title" content="인천 ICT 이노베이션스퀘어">
+      <meta property="og:description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:image" content="/resource/images/main_thumb.webp">
+      <meta name="twitter:card" content="summary_large_image">
+
+      <link rel="shortcut icon" href="/resource/images/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/sub.css">
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+
+   <body>
+      <div id="wrap">
+         <!-- header -->
+         <header id="hd"></header>
+
+         <!-- 콘텐츠 영역 -->
+         <div id="content" class="container">
+            <!-- 콘텐츠 영역 -->
+            <div class="inner2">
+
+               <div class="sub_layout">
+                  <!-- ===== 좌측 사이드 메뉴 ===== -->
+                  <div class="aside" aria-label="서브 메뉴">
+                     <div class="tit">
+                        <strong>마이페이지</strong>
+                     </div>
+                     <ul class="aside_nav_list">
+                        <li class="aside_nav_item active">
+                           <a href="/my/profile.html">기본 정보</a>
+                        </li>
+                        <li class="aside_nav_item">
+                           <a href="/my/spaceHistory.html">공간 예약 내역</a>
+                        </li>
+                        <li class="aside_nav_item">
+                           <a href="/my/deviceHistory.html">디바이스 대여 내역</a>
+                        </li>
+                        <li class="aside_nav_item">
+                           <a href="/my/inquiryHistory.html">온라인 문의 내역</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <!-- ===== 우측 콘텐츠 영역 ===== -->
+                  <main class="sub_content">
+                     <div class="sub_page_head">
+                        <h4 class="sub_page_tit">기본 정보</h4>
+                        <hr class="sub_page_line">
+                     </div>
+
+                     <div class="form_head">
+                        <h4 class="form_tit">기본 정보 입력</h4>
+                        <p class="form_required_note"><em>*</em> 는 필수 입력입니다.</p>
+                     </div>
+
+                     <div class="form_box">
+                        <table class="form_table">
+                           <tbody>
+                               <tr>
+                                 <th>이메일 주소 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="email" class="inp_st1 wd100" id="signupEmail" placeholder="imincheon@mail.com" autocomplete="email">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>비밀번호 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="password_wrap">
+                                       <input type="password" class="inp_st1 wd100" id="signupPw" placeholder="비밀번호를 입력해주세요." autocomplete="new-password">
+                                       
+                                       <button type="button" class="icon-box" id="togglePw">
+                                          <i class="icon icon-eye"></i>
+                                       </button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>비밀번호 확인 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="password_wrap">
+                                       <input type="password" class="inp_st1 wd100" id="signupPwConfirm" placeholder="비밀번호를 입력해주세요." autocomplete="new-password">
+                                       
+                                       <button type="button" class="icon-box" id="togglePwConfirm">
+                                          <i class="icon icon-eye"></i>
+                                       </button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>이름 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="text" class="inp_st1 wd100" id="signupName" placeholder="홍길동" autocomplete="name">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>휴대폰 번호 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="tel" class="inp_st1 wd100" id="signupPhone" placeholder="01012345678" autocomplete="tel">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>생년월일 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="form_inp_row">
+                                       <select class="inp_st1" id="birthYear" style="min-width: 10rem;">
+                                          <option value="">연도</option>
+                                       </select>
+                                       <select class="inp_st1" id="birthMonth" style="min-width: 8rem;">
+                                          <option value="">월</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                          <option value="11">11</option>
+                                          <option value="12">12</option>
+                                       </select>
+                                       <select class="inp_st1" id="birthDay" style="min-width: 8rem;">
+                                          <option value="">일</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>성별<span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="form_inp_row">
+                                       <label for="men" class="radio_st1">
+                                          <input type="radio" class="" name="gender" id="men" checked>남성
+                                       </label>
+                                       <label for="women"class="radio_st1">
+                                          <input type="radio" class="" name="gender" id="women">여성
+                                       </label>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <div class="btn_submit_wrap flex_col align_center">
+                        <button type="button" class="btn btn-lg btn-main wd20" onclick="openAlertPopup()">수정하기</button>
+                        <button type="button" class="btn btn-xs btn-text wd20" onclick="">회원 탈퇴</button>
+                     </div>
+
+                  </main>
+               </div>
+
+
+            </div>
+         </div>
+         
+         <footer id="ft"></footer>
+      </div>
+
+      <div class="popup_wrap" id="alertPopup">
+			<div class="popup popup_sm">
+				<div class="popup_cont">
+					<div class="popup_head">
+						<button type="button" class="btn-close" onclick="closeAlertPopup();"><span class="icon-box"><i class="icon icon-x"></i></span></button>
+					</div>
+					<div class="popup_body">
+						<div class="alert">
+                     <span class="icon-box s96 st1">
+                        <i class="icon icon-checkcircle_line"></i>
+                     </span>
+							<h4>정보 수정이 완료되었습니다</h4>
+						</div>
+					</div>
+					<div class="popup_btn_wrap">
+						<div class="btn_wrap center">
+							<button type="button" class="btn btn-line btn-lg btn-round" onclick="closeAlertPopup()">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+      <script>
+         function openAlertPopup() {
+            document.getElementById('alertPopup').classList.add('open');
+            document.body.style.overflow = 'hidden';
+         }
+         function closeAlertPopup() {
+            document.getElementById('alertPopup').classList.remove('open');
+            document.body.style.overflow = '';
+         }
+
+         /* 비밀번호 토글 */
+         function bindPwToggle(btnId, inputId) {
+            document.getElementById(btnId).addEventListener('click', function () {
+               const input = document.getElementById(inputId);
+               const icon = this.querySelector('i');
+               if (input.type === 'password') {
+                  input.type = 'text';
+                  icon.classList.replace('icon-eye', 'icon-eye-slash');
+               } else {
+                  input.type = 'password';
+                  icon.classList.replace('icon-eye-slash', 'icon-eye');
+               }
+            });
+         }
+         bindPwToggle('togglePw', 'signupPw');
+         bindPwToggle('togglePwConfirm', 'signupPwConfirm');
+
+         /* 생년월일 select 동적 생성 */
+          (function () {
+            const yearSel = document.getElementById('birthYear');
+            const daySel = document.getElementById('birthDay');
+            const curYear = new Date().getFullYear();
+
+            for (let y = curYear; y >= 1900; y--) {
+               const opt = document.createElement('option');
+               opt.value = y;
+               opt.textContent = y;
+               yearSel.appendChild(opt);
+            }
+
+            for (let d = 1; d <= 31; d++) {
+               const opt = document.createElement('option');
+               opt.value = d;
+               opt.textContent = d;
+               daySel.appendChild(opt);
+            }
+
+            // 월/년 변경 시 일수 재계산
+            function updateDays() {
+               const y = parseInt(yearSel.value) || 2000;
+               const m = parseInt(document.getElementById('birthMonth').value) || 1;
+               const maxDay = new Date(y, m, 0).getDate();
+               const curDay = parseInt(daySel.value);
+
+               daySel.innerHTML = '<option value="">일</option>';
+               for (let d = 1; d <= maxDay; d++) {
+                  const opt = document.createElement('option');
+                  opt.value = d;
+                  opt.textContent = d;
+                  if (d === curDay) opt.selected = true;
+                  daySel.appendChild(opt);
+               }
+            }
+
+            yearSel.addEventListener('change', updateDays);
+            document.getElementById('birthMonth').addEventListener('change', updateDays);
+         })();
+      </script>
+
+
+
+   </body>
+</html>

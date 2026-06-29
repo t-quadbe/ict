@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어</title>
+
+      <meta name="description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="">
+      <meta property="og:title" content="인천 ICT 이노베이션스퀘어">
+      <meta property="og:description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:image" content="/resource/images/main_thumb.webp">
+      <meta name="twitter:card" content="summary_large_image">
+
+      <link rel="shortcut icon" href="/resource/images/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/sub.css">
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+
+   <body>
+      <div id="wrap">
+         <!-- header -->
+         <header id="hd"></header>
+
+         <!-- 콘텐츠 영역 -->
+         <div id="content" class="container">
+            <main class="content main">
+               <div class="signup_wrap">
+
+                  <h1>회원가입</h1>
+
+                  <!-- 스텝 인디케이터 -->
+                  <div class="signup_steps" id="signupSteps">
+                     <div class="signup_step done" data-step="1">
+                        <span class="signup_step_num">1</span>
+                        <div class="signup_step_icon">
+                           <span class="icon-box st3 s96"><i class="icon-line icon-checkcircle_line"></i></span>
+                        </div>
+                        <span class="signup_step_label">ICT 약관동의</span>
+                     </div>
+                     <div class="signup_step active" data-step="2">
+                        <span class="signup_step_num">2</span>
+                        <div class="signup_step_icon">
+                           <span class="icon-box st3 s96"><i class="icon-line icon-docs_line"></i></span>
+                        </div>
+                        <span class="signup_step_label">개인정보 입력</span>
+                     </div>
+                     <div class="signup_step" data-step="3">
+                        <span class="signup_step_num">3</span>
+                        <div class="signup_step_icon">
+                           <span class="icon-box st3 s96"><i class="icon-line icon-msg_line"></i></span>
+                        </div>
+                        <span class="signup_step_label">이메일 인증</span>
+                     </div>
+                     <div class="signup_step" data-step="4">
+                        <span class="signup_step_num">4</span>
+                        <div class="signup_step_icon">
+                           <span class="icon-box st3 s96"><i class="icon-line icon-usercheck_line"></i></span>
+                        </div>
+                        <span class="signup_step_label">회원가입 완료</span>
+                     </div>
+                  </div>
+
+                  <!-- ===== STEP 1: ICT 약관동의 ===== -->
+                  <div class="signup_section" id="step1" data-section="1">
+
+                     <!-- ICT 이용약관 -->
+                     <div class="signup_section_block">
+                        <h2 class="signup_section_tit">ICT 이용약관</h2>
+
+                        <div class="terms_accordion" style="margin-top: 2rem;">
+                           <div class="terms_accordion_head open" data-accordion>
+                              <div class="terms_agree_row">
+                                 <input type="checkbox" class="terms_checkbox" id="agree1_1" onclick="event.stopPropagation()">
+                                 <label for="agree1_1" class="terms_agree_label" onclick="event.stopPropagation()">
+                                    <span class="req_mark">[필수]</span> 모든 약관을 확인하고 전체 동의합니다.
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="terms_accordion_body" style="display: block;">
+                              <p><strong>제1조 (목적)</strong></p>
+                              <p>이 약관은 ICT CoC(이하 "ICT CoC"이라 합니다)이 제공하는 ICT CoC(www.ICT CoC.kr, 이하 "ICT CoC"라 합니다) 사용자 포털(이하 "서비스"라 합니다)의 이용조건 및 절차 등에 관한 사항을 규정함을 목적으로 합니다.</p>
+                              <br>
+                              <p><strong>제2조 (ICT CoC 웹사이트의 사용)</strong></p>
+                              <p>회원에게는 'ICT CoC 웹사이트'를 단일ID 및 Password로 이용하실 수 있으며, ICT CoC과 'ICT CoC 웹사이트'의 각 개별 서비스 이용을 위하여 회원이 제공하신 정보를 이용하는 것에 동의 합니다.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- 개인정보수집 및 이용에 대한 안내 -->
+                     <div class="signup_section_block">
+                        <h2 class="signup_section_tit">개인정보수집 및 이용에 대한 안내</h2>
+
+                        <div class="terms_accordion mt20">
+                           <div class="terms_accordion_head open" data-accordion>
+                              <div class="terms_agree_row">
+                                 <input type="checkbox" class="terms_checkbox" id="agree2_1" onclick="event.stopPropagation()">
+                                 <label for="agree2_1" class="terms_agree_label" onclick="event.stopPropagation()">
+                                    <span class="req_mark">[필수]</span> 모든 약관을 확인하고 전체 동의합니다.
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="terms_accordion_body" style="display: block;">
+                              <p><strong>제1조 (목적)</strong></p>
+                              <p>이 약관은 ICT CoC(이하 "ICT CoC"이라 합니다)이 제공하는 ICT CoC(www.ICT CoC.kr, 이하 "ICT CoC"라 합니다) 사용자 포털(이하 "서비스"라 합니다)의 이용조건 및 절차 등에 관한 사항을 규정함을 목적으로 합니다.</p>
+                              <br>
+                              <p><strong>제2조 (ICT CoC 웹사이트의 사용)</strong></p>
+                              <p>회원에게는 'ICT CoC 웹사이트'를 단일ID 및 Password로 이용하실 수 있으며, ICT CoC과 'ICT CoC 웹사이트'의 각 개별 서비스 이용을 위하여 회원이 제공하신 정보를 이용하는 것에 동의 합니다.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="signup_btn_wrap">
+                        <button type="button" class="btn btn-main" id="step1Next">다음</button>
+                     </div>
+                  </div>
+
+                  <!-- ===== STEP 2: 개인정보 입력 ===== -->
+                  <div class="signup_section active" id="step2" data-section="2">
+
+                     <div class="form_head">
+                        <h4 class="form_tit">개인정보 입력</h4>
+                        <p class="form_required_note"><em>*</em> 는 필수 입력입니다.</p>
+                     </div>
+
+                     <div class="form_box">
+                        <table class="form_table">
+                           <tbody>
+                              <tr>
+                                 <th>이메일 주소 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="email" class="inp_st1 wd100" id="signupEmail" placeholder="imincheon@mail.com" autocomplete="email">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>비밀번호 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="password_wrap">
+                                       <input type="password" class="inp_st1 wd100" id="signupPw" placeholder="비밀번호를 입력해주세요." autocomplete="new-password">
+                                       
+                                       <button type="button" class="icon-box sm" id="togglePw">
+                                          <i class="icon icon-eye"></i>
+                                       </button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>비밀번호 확인 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="password_wrap">
+                                       <input type="password" class="inp_st1 wd100" id="signupPwConfirm" placeholder="비밀번호를 입력해주세요." autocomplete="new-password">
+                                       
+                                       <button type="button" class="icon-box sm" id="togglePwConfirm">
+                                          <i class="icon icon-eye"></i>
+                                       </button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>이름 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="text" class="inp_st1 wd100" id="signupName" placeholder="홍길동" autocomplete="name">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>휴대폰 번호 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="tel" class="inp_st1 wd100" id="signupPhone" placeholder="01012345678" autocomplete="tel">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>생년월일 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="form_inp_row">
+                                       <select class="inp_st1" id="birthYear" style="min-width: 10rem;">
+                                          <option value="">연도</option>
+                                       </select>
+                                       <select class="inp_st1" id="birthMonth" style="min-width: 8rem;">
+                                          <option value="">월</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                          <option value="11">11</option>
+                                          <option value="12">12</option>
+                                       </select>
+                                       <select class="inp_st1" id="birthDay" style="min-width: 8rem;">
+                                          <option value="">일</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>성별 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="form_inp_row">
+                                       <label class="radio_st1">
+                                          <input type="radio" class="" name="gender" value="M" checked>남성
+                                       </label>
+                                       <label class="radio_st1">
+                                          <input type="radio" class="" name="gender" value="F">여성
+                                       </label>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <div class="signup_btn_wrap">
+                        <button type="button" class="btn btn-main" id="step2Next">완료</button>
+                     </div>
+                  </div>
+
+                  <!-- ===== STEP 3: 이메일 인증 ===== -->
+                  <div class="signup_section" id="step3" data-section="3">
+
+                     <div class="verify_box">
+                        <div class="verify_box_icon">
+                           <span class="icon-box st2 s96"><i class="icon-line icon-msg_line"></i></span>
+                        </div>
+
+                        <p class="verify_box_desc">입력한 이메일 주소로 전송된 인증코드를 입력해주세요</p>
+
+                        <div class="verify_inp_wrap">
+                           <input type="text" class="inp_st1" id="verifyCode" placeholder="인증코드 입력" maxlength="6">
+                           <span class="verify_timer" id="verifyTimer">02:50</span>
+                        </div>
+
+                        <button type="button" class="verify_resend" id="resendCode">인증 코드 재전송</button>
+                     </div>
+
+                     <div class="signup_btn_wrap">
+                        <button type="button" class="btn btn-main" id="step3Next">인증 완료</button>
+                     </div>
+                  </div>
+
+                  <!-- ===== STEP 4: 회원가입 완료 ===== -->
+                  <div class="signup_section" id="step4" data-section="4">
+
+                     <div class="signup_done_wrap">
+                        <div class="done_icon">
+                           <span class="icon-box st1 s96"><i class="icon icon-usercheck_line"></i></span>
+                        </div>
+                        <h3>회원가입이 완료되었습니다!</h3>
+                        <p>인천 ICT 이노베이션스퀘어의 회원이 되신 것을 진심으로 환영합니다.</p>
+                        <div class="btn_wrap">
+                           <a href="/login.html" class="btn btn-lg btn-line-primary">로그인</a>
+                           <a href="/index.html" class="btn btn-lg btn-main">메인으로</a>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </main>
+         </div>
+
+         <footer id="ft"></footer>
+      </div>
+
+      <script>
+         const urlParams = new URLSearchParams(window.location.search);
+         const initStep = parseInt(urlParams.get('step')) || 1;
+
+         /* 스텝 이동 */
+         function goToStep(stepNum) {
+            const totalSteps = 4;
+
+            // 섹션 전환
+            document.querySelectorAll('.signup_section').forEach(el => el.classList.remove('active'));
+            const targetSection = document.getElementById('step' + stepNum);
+            if (targetSection) targetSection.classList.add('active');
+
+            // 스텝 인디케이터 업데이트
+            document.querySelectorAll('.signup_step').forEach(el => {
+               const num = parseInt(el.dataset.step);
+               el.classList.remove('active', 'done');
+               if (num < stepNum) el.classList.add('done');
+               else if (num === stepNum) el.classList.add('active');
+            });
+
+            // 스크롤 상단
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // 이메일 인증 스텝이면 타이머 시작
+            if (stepNum === 3) startVerifyTimer();
+         }
+
+         // 초기 스텝 설정
+         goToStep(initStep);
+
+         /* 스텝 1 → 2: 약관 동의 확인 */
+         document.getElementById('step1Next').addEventListener('click', function () {
+            const chk1_1 = document.getElementById('agree1_1').checked;
+            const chk2_1 = document.getElementById('agree2_1').checked;
+
+            if (!chk1_1) {
+               alert('ICT 이용약관의 모든 항목에 동의해주세요.');
+               return;
+            }
+            if (!chk2_1) {
+               alert('개인정보수집 및 이용의 모든 항목에 동의해주세요.');
+               return;
+            }
+            goToStep(2);
+         });
+
+         /* 스텝 2 → 3: 개인정보 입력 검증*/
+         document.getElementById('step2Next').addEventListener('click', function () {
+            const email = document.getElementById('signupEmail').value.trim();
+            const pw = document.getElementById('signupPw').value;
+            const pwConfirm = document.getElementById('signupPwConfirm').value;
+            const name = document.getElementById('signupName').value.trim();
+            const phone = document.getElementById('signupPhone').value.trim();
+            const year = document.getElementById('birthYear').value;
+            const month = document.getElementById('birthMonth').value;
+            const day = document.getElementById('birthDay').value;
+            const gender = document.querySelector('input[name="gender"]:checked');
+
+            if (!email) { alert('이메일 주소를 입력해주세요.'); document.getElementById('signupEmail').focus(); return; }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert('올바른 이메일 형식을 입력해주세요.'); document.getElementById('signupEmail').focus(); return; }
+            if (!pw) { alert('비밀번호를 입력해주세요.'); document.getElementById('signupPw').focus(); return; }
+            if (pw !== pwConfirm) { alert('비밀번호가 일치하지 않습니다.'); document.getElementById('signupPwConfirm').focus(); return; }
+            if (!name) { alert('이름을 입력해주세요.'); document.getElementById('signupName').focus(); return; }
+            if (!phone) { alert('휴대폰 번호를 입력해주세요.'); document.getElementById('signupPhone').focus(); return; }
+            if (!year || !month || !day) { alert('생년월일을 선택해주세요.'); return; }
+            if (!gender) { alert('성별을 선택해주세요.'); return; }
+
+            goToStep(3);
+         });
+
+         /* 스텝 3 → 4: 인증 완료 */
+         document.getElementById('step3Next').addEventListener('click', function () {
+            const code = document.getElementById('verifyCode').value.trim();
+            if (!code) {
+               alert('인증코드를 입력해주세요.');
+               document.getElementById('verifyCode').focus();
+               return;
+            }
+            clearInterval(timerInterval);
+            goToStep(4);
+         });
+
+         /* 이메일 인증 타이머*/
+         let timerInterval = null;
+         let timerSeconds = 170; // 02:50
+
+         function startVerifyTimer() {
+            clearInterval(timerInterval);
+            timerSeconds = 170;
+            updateTimerDisplay();
+
+            timerInterval = setInterval(function () {
+               timerSeconds--;
+               updateTimerDisplay();
+               if (timerSeconds <= 0) {
+                  clearInterval(timerInterval);
+                  document.getElementById('verifyTimer').textContent = '00:00';
+               }
+            }, 1000);
+         }
+
+         function updateTimerDisplay() {
+            const m = String(Math.floor(timerSeconds / 60)).padStart(2, '0');
+            const s = String(timerSeconds % 60).padStart(2, '0');
+            document.getElementById('verifyTimer').textContent = m + ':' + s;
+         }
+
+         document.getElementById('resendCode').addEventListener('click', function () {
+            alert('인증코드를 재전송했습니다.');
+            startVerifyTimer();
+         });
+
+         /* 비밀번호 토글 */
+         function bindPwToggle(btnId, inputId) {
+            document.getElementById(btnId).addEventListener('click', function () {
+               const input = document.getElementById(inputId);
+               const icon = this.querySelector('i');
+               if (input.type === 'password') {
+                  input.type = 'text';
+                  icon.classList.replace('icon-eye', 'icon-eye-slash');
+               } else {
+                  input.type = 'password';
+                  icon.classList.replace('icon-eye-slash', 'icon-eye');
+               }
+            });
+         }
+         bindPwToggle('togglePw', 'signupPw');
+         bindPwToggle('togglePwConfirm', 'signupPwConfirm');
+
+         /* 생년월일 select 동적 생성 */
+         (function () {
+            const yearSel = document.getElementById('birthYear');
+            const daySel = document.getElementById('birthDay');
+            const curYear = new Date().getFullYear();
+
+            for (let y = curYear; y >= 1900; y--) {
+               const opt = document.createElement('option');
+               opt.value = y;
+               opt.textContent = y;
+               yearSel.appendChild(opt);
+            }
+
+            for (let d = 1; d <= 31; d++) {
+               const opt = document.createElement('option');
+               opt.value = d;
+               opt.textContent = d;
+               daySel.appendChild(opt);
+            }
+
+            // 월/년 변경 시 일수 재계산
+            function updateDays() {
+               const y = parseInt(yearSel.value) || 2000;
+               const m = parseInt(document.getElementById('birthMonth').value) || 1;
+               const maxDay = new Date(y, m, 0).getDate();
+               const curDay = parseInt(daySel.value);
+
+               daySel.innerHTML = '<option value="">일</option>';
+               for (let d = 1; d <= maxDay; d++) {
+                  const opt = document.createElement('option');
+                  opt.value = d;
+                  opt.textContent = d;
+                  if (d === curDay) opt.selected = true;
+                  daySel.appendChild(opt);
+               }
+            }
+
+            yearSel.addEventListener('change', updateDays);
+            document.getElementById('birthMonth').addEventListener('change', updateDays);
+         })();
+      </script>
+   </body>
+</html>

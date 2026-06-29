@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어</title>
+
+      <meta name="description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="">
+      <meta property="og:title" content="인천 ICT 이노베이션스퀘어">
+      <meta property="og:description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
+      <meta property="og:image" content="/resource/images/main_thumb.webp">
+      <meta name="twitter:card" content="summary_large_image">
+
+      <link rel="shortcut icon" href="/resource/images/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/sub.css">
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+
+   <body>
+      <div id="wrap">
+         <!-- header -->
+         <header id="hd"></header>
+
+         <!-- 콘텐츠 영역 -->
+         <div id="content" class="container">
+            <div class="inner2">
+               <div class="sub_layout">
+                  <!-- ===== 좌측 사이드 메뉴 ===== -->
+                  <div class="aside" aria-label="서브 메뉴">
+                     <div class="tit">
+                        <strong>공간 · 디바이스</strong>
+                     </div>
+                     <ul class="aside_nav_list">
+                        <li class="aside_nav_item active">
+                           <a href="/space/place.html">공간 소개</a>
+                        </li>
+                        <li class="aside_nav_item">
+                           <a href="/space/device.html">디바이스 대여</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <!-- ===== 우측 콘텐츠 영역 ===== -->
+                  <main class="sub_content">
+                     <div class="sub_page_head">
+                        <h4 class="sub_page_tit">공간 예약</h4>
+                        <hr class="sub_page_line">
+                     </div>
+
+
+                     <!-- 유의사항 -->
+                     <div class="notice_box">
+                        <div class="notice_box_head">
+                           <span class="icon-box st2 s48">
+                              <i class="icon icon-cube"></i>
+                           </span>
+                           <strong >공간 사용에 대한 유의사항 안내</strong>
+                        </div>
+                        <ol class="notice_box_list st2">
+                           <li>공간 예약 시, 신청 목적을 반드시 상세히 기재해 주시기 바랍니다.</li>
+                           <li>공간 예약은 신청 후 관리자 확인을 거쳐 확정됩니다.</li>
+                        </ol>
+                     </div>
+                     
+
+                     <div class="detail_wrap">
+                        <div class="detail_left">
+                           <div class="detail_thumb">
+                              <img src="../resource/images/ex_space.jpg" alt="AX 실습교육장 이미지">
+                           </div>
+                           <div class="detail_name_row">
+                              <span class="tag tag-blue">남동 ICT 콤플렉스</span>
+                              <strong class="detail_name">AX 실습교육장</strong>
+                           </div>
+                           <table class="info_table">
+                              <tbody>
+                                 <tr>
+                                    <th>공간유형</th>
+                                    <td>교육장</td>
+                                 </tr>
+                                 <tr>
+                                    <th>수용인원</th>
+                                    <td>최대 12명</td>
+                                 </tr>
+                                 <tr>
+                                    <th>예약가능시간</th>
+                                    <td>평일 11:00 ~ 15:00</td>
+                                 </tr>
+                                 <tr>
+                                    <th>문의처</th>
+                                    <td>032-260-2105 / sgc@itp.or.kr</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+
+                        <div class="detail_right">
+                           <p class="calendar_section_title">날짜 및 시간 선택</p>
+
+                           <!-- 달력 -->
+                           <div class="calendar_wrap">
+                              <div class="calendar_header">
+                                 <button type="button" class="icon-box" id="prevMonth">
+                                    <i class="icon icon-chevron_left"></i>
+                                 </button>
+                                 <strong id="calendarTitle">2026년 03월</strong>
+                                 <button type="button" class="icon-box" id="nextMonth">
+                                    <i class="icon icon-chevron_right"></i>
+                                 </button>
+                              </div>
+                              <table class="calendar_table" id="calendarTable">
+                                 <thead>
+                                    <tr>
+                                       <th>일</th>
+                                       <th>월</th>
+                                       <th>화</th>
+                                       <th>수</th>
+                                       <th>목</th>
+                                       <th>금</th>
+                                       <th>토</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody id="calendarBody">
+                                 </tbody>
+                              </table>
+                           </div>
+
+                           <!-- 시간 슬롯 -->
+                           <div class="list list_st1 gap8 mb20" id="timeSlots">
+                              <button type="button" class="btn time-btn disabled">09:00 - 10:00</button>
+                              <button type="button" class="btn time-btn disabled">10:00 - 11:00</button>
+                              <button type="button" class="btn time-btn">11:00 - 12:00</button>
+                              <button type="button" class="btn time-btn active">13:00 - 14:00</button>
+                              <button type="button" class="btn time-btn">17:00 - 18:00</button>
+                              <button type="button" class="btn time-btn">16:00 - 17:00</button>
+                              <button type="button" class="btn time-btn disabled">18:00 - 19:00</button>
+                              <button type="button" class="btn time-btn">15:00 - 16:00</button>
+                              <button type="button" class="btn time-btn">14:00 - 15:00</button>
+                           </div>
+
+                           <!-- 예약하기 버튼 -->
+                           <button type="button" class="btn btn-lg btn-main wd100" onclick="location.href='/space/reserveForm.html'">예약하기</button>
+                        </div>
+                     </div>
+
+                  </main>
+               </div>
+            </div>
+         </div>
+
+         <footer id="ft"></footer>
+      </div>
+
+      <script>
+         let current = new Date();
+         let selectedDate = null;
+
+         const title = document.getElementById('calendarTitle');
+         const body = document.getElementById('calendarBody');
+
+         function render() {
+            const year = current.getFullYear();
+            const month = current.getMonth();
+
+            title.textContent = `${year}년 ${String(month + 1).padStart(2, '0')}월`;
+
+            const firstDay = new Date(year, month, 1).getDay();
+            const lastDate = new Date(year, month + 1, 0).getDate();
+
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            let html = '';
+            let day = 1;
+
+            for (let row = 0; row < 6; row++) {
+               html += '<tr>';
+
+               for (let col = 0; col < 7; col++) {
+
+                  if ((row === 0 && col < firstDay) || day > lastDate) {
+                     html += '<td></td>';
+                     continue;
+                  }
+
+                  const date = new Date(year, month, day);
+
+                  let cls = 'cal_day';
+
+                  // 일요일
+                  if (col === 0) cls += ' sun';
+
+                  // 토요일
+                  if (col === 6) cls += ' sat';
+
+                  // 지난 날짜 비활성화
+                  if (date < today) {
+                     cls += ' disabled';
+                  }
+
+                  // 선택 날짜
+                  if (
+                     selectedDate &&
+                     date.toDateString() === selectedDate.toDateString()
+                  ) {
+                     cls += ' active';
+                  }
+
+                  html += `
+                     <td>
+                        <span
+                           class="${cls}"
+                           data-year="${year}"
+                           data-month="${month}"
+                           data-day="${day}">
+                           ${day}
+                        </span>
+                     </td>
+                  `;
+
+                  day++;
+               }
+
+               html += '</tr>';
+
+               if (day > lastDate) break;
+            }
+
+            body.innerHTML = html;
+
+            body.querySelectorAll('.cal_day:not(.disabled)').forEach(el => {
+               el.addEventListener('click', () => {
+
+                  selectedDate = new Date(
+                     Number(el.dataset.year),
+                     Number(el.dataset.month),
+                     Number(el.dataset.day)
+                  );
+
+                  render();
+               });
+            });
+         }
+
+         document.getElementById('prevMonth').addEventListener('click', () => {
+            current.setMonth(current.getMonth() - 1);
+            render();
+         });
+
+         document.getElementById('nextMonth').addEventListener('click', () => {
+            current.setMonth(current.getMonth() + 1);
+            render();
+         });
+
+         render();
+
+         // 시간 선택
+         document.querySelectorAll('.time-btn:not(.disabled)').forEach(btn => {
+            btn.addEventListener('click', () => {
+
+               document.querySelectorAll('.time-btn')
+                  .forEach(item => item.classList.remove('active'));
+
+               btn.classList.add('active');
+            });
+         });
+      </script>
+   </body>
+</html>
