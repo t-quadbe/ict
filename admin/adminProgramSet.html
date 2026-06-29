@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어 | 교육(프로그램) 관리</title>
+      <meta name="description" content="인천 ICT 이노베이션스퀘어 관리자 시스템">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/admin.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+   <body>
+      <div class="admin-wrap">
+         <div class="side-wrap" id="menu"></div>
+
+         <div class="main">
+            <header class="flex w-full">
+               <div class="btn_wrap">
+                  <button type="button" class="btn btn-xs btn-text">ICT 메인페이지</button>
+                  <button type="button" class="btn btn-xs btn-black">로그아웃</button>
+               </div>
+            </header>
+
+            <div class="main_wrap">
+               <div class="inner2">
+                  <div class="main_tit flex_between">
+                     <h2>프로그램 관리</h2>
+                     <a href="adminProgramSet_board.html" class="btn btn-md btn-black">새 프로그램 등록 <span class="icon-box"><i class="icon icon-add"></i></span></a>
+                  </div>
+                  <div class="sect_cont">
+                     <div class="filter_box">
+                        <div class="filter_row">
+                           <div class="select_box">
+                              <label>구분</label>
+                              <select class="inp_st1">
+                                 <option value="">전체</option>
+                                 <option value="self">자기계발</option>
+                                 <option value="job">취업</option>
+                                 <option value="ai">AI</option>
+                              </select>
+                           </div>
+                           <div class="select_box">
+                              <label>상태</label>
+                              <select class="inp_st1">
+                                 <option value="">전체</option>
+                                 <option value="open">모집 중</option>
+                                 <option value="close">모집 마감</option>
+                                 <option value="done">종료</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="filter_row">
+                           <label>교육 기간</label>
+                           <div class="date_box">
+                              <input class="input_date inp_st1" type="date">
+                              <p class="hyp">~</p>
+                              <input class="input_date inp_st1" type="date">
+                           </div>
+                        </div>
+                        <div class="filter_row">
+                           <label>검색어</label>
+                           <div class="search_bar wd100">
+                              <div class="inp_st1_search">
+                                 <input class="inp_st1 wd100" placeholder="프로그램명, 교육 장소 검색" type="text" maxlength="200">
+                                 <button type="button">검색</button>
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-md btn-black">검색</button>
+                        </div>
+                     </div>
+
+                     <div class="table_set">
+                        <div class="flex align_end flex_between">
+                           <div class="list_meta">
+                              <span class="list_total">총 <strong>10</strong>건</span>
+                           </div>
+                           <a href="" class="btn btn-sm btn-line">
+                              <span class="icon-box"><i class="icon icon-download"></i></span>엑셀 다운로드
+                           </a>
+                        </div>
+                        <div class="table_wrap wd100 mt10">
+                           <table class="table_st2">
+                              <thead>
+                                 <tr>
+                                    <th class="c5"><input type="checkbox"></th>
+                                    <th class="c8">번호</th>
+                                    <th class="c10">구분</th>
+                                    <th>프로그램명</th>
+                                    <th class="c20">신청 기간</th>
+                                    <th class="c20">교육 기간</th>
+                                    <th class="c20">교육 장소</th>
+                                    <th class="c10">상태</th>
+                                    <th class="c15">등록일</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>10</td>
+                                    <td>자기계발</td>
+                                    <td><div class="tit"><a href="adminProgramSet_board.html" class="txt-over1">2026 AI 활용 이미지 X 옷짐 제작 과정</a></div></td>
+                                    <td>2026-06-01 ~ 2026-06-20</td>
+                                    <td>2026-07-01 ~ 2026-07-30</td>
+                                    <td>송도 교육장</td>
+                                    <td><span class="tag tag-blue">모집 중</span></td>
+                                    <td>2026-06-01</td>
+                                 </tr>
+                                 <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>9</td>
+                                    <td>AI</td>
+                                    <td><div class="tit"><a href="adminProgramSet_board.html" class="txt-over1">2026 창작자 AI 학습 교육생 모집</a></div></td>
+                                    <td>2026-05-01 ~ 2026-05-31</td>
+                                    <td>2026-06-01 ~ 2026-06-30</td>
+                                    <td>남동 ICT 콤플렉스</td>
+                                    <td><span class="tag tag-gray">모집종료</span></td>
+                                    <td>2026-05-01</td>
+                                 </tr>
+                                 <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>취업</td>
+                                    <td><div class="tit"><a href="adminProgramSet_board.html" class="txt-over1">피디아브로테임 2026 교육 과정</a></div></td>
+                                    <td>2026-03-01 ~ 2026-03-15</td>
+                                    <td>2026-04-01 ~ 2026-04-30</td>
+                                    <td>미추홀 교육장</td>
+                                    <td><span class="tag tag-gray">진행종료</span></td>
+                                    <td>2026-03-01</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>loadAdminMenu();</script>
+   </body>
+</html>

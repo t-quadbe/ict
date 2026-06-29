@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어 | 회원 관리</title>
+      <meta name="description" content="인천 ICT 이노베이션스퀘어 관리자 시스템">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/admin.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+   <body>
+      <div class="admin-wrap">
+         <div class="side-wrap" id="menu"></div>
+
+         <div class="main">
+            <header class="flex w-full">
+               <div class="btn_wrap">
+                  <button type="button" class="btn btn-xs btn-text">ICT 메인페이지</button>
+                  <button type="button" class="btn btn-xs btn-black">로그아웃</button>
+               </div>
+            </header>
+
+            <div class="main_wrap">
+               <div class="inner2">
+                  <div class="main_tit">
+                     <h2>회원 관리</h2>
+                  </div>
+                  <div class="sect_cont">
+                     <!-- 검색 필터 -->
+                     <div class="filter_box">
+                        <div class="filter_row">
+                           <div class="select_box">
+                              <label for="userStatus">회원상태</label>
+                              <select id="userStatus" class="inp_st1">
+                                 <option value="">전체</option>
+                                 <option value="normal">정상</option>
+                                 <option value="withdraw">탈퇴</option>
+                                 <option value="pending">미승인</option>
+                              </select>
+                           </div>
+                           <div class="select_box">
+                              <label for="smsAgree">수신동의</label>
+                              <select id="smsAgree" class="inp_st1">
+                                 <option value="">전체</option>
+                                 <option value="Y">동의</option>
+                                 <option value="N">미동의</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="filter_row">
+                           <label>가입일</label>
+                           <div class="date_box">
+                              <input class="input_date inp_st1" type="date">
+                              <p class="hyp">~</p>
+                              <input class="input_date inp_st1" type="date">
+                           </div>
+                        </div>
+                        <div class="filter_row">
+                           <label>검색어</label>
+                           <div class="search_bar wd100">
+                              <div class="inp_st1_search">
+                                 <input class="inp_st1 wd100" placeholder="이름, 이메일, 연락처 검색" type="text" maxlength="200">
+                                 <button type="button">검색</button>
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-md btn-black ml10">검색</button>
+                        </div>
+                     </div>
+
+                     <!-- 테이블 -->
+                     <div class="table_set">
+                        <div class="flex align_end flex_between">
+                           <div class="list_meta">
+                              <span class="list_total">총 <strong>200</strong>건</span>
+                           </div>
+                           <a href="" class="btn btn-sm btn-line">
+                              <span class="icon-box"><i class="icon icon-download"></i></span>엑셀 다운로드
+                           </a>
+                        </div>
+                        <div class="table_wrap wd100 mt10">
+                           <table class="table_st2">
+                              <thead>
+                                 <tr>
+                                    <th class="c5"><input type="checkbox"></th>
+                                    <th class="c8">번호</th>
+                                    <th>아이디(이메일)</th>
+                                    <th class="c10">이름</th>
+                                    <th class="c15">연락처</th>
+                                    <th class="c8">수신동의</th>
+                                    <th class="c10">회원 상태</th>
+                                    <th class="c15">가입일</th>
+                                    <th class="c15">탈퇴일</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>9</td>
+                                    <td><div class="tit"><a href="adminUserSet_board.html" class="txt-over1">kimincheon@gmail.com</a></div></td>
+                                    <td>김인천</td>
+                                    <td>010-1234-5678</td>
+                                    <td>Y</td>
+                                    <td><span class="tag tag-blue">정상</span></td>
+                                    <td>2026-06-12</td>
+                                    <td>-</td>
+                                 </tr>
+                                 <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td><div class="tit"><a href="adminUserSet_board.html" class="txt-over1">kangsongdo@gmail.com</a></div></td>
+                                    <td>강송도</td>
+                                    <td>010-1234-5678</td>
+                                    <td>Y</td>
+                                    <td><span class="tag tag-red">탈퇴</span></td>
+                                    <td>2026-06-12</td>
+                                    <td>2026-06-12</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+
+
+
+                        <div class="pagination">
+							<div class="pagination_controls">
+							<button type="button" class="arrow_btn arrow_prev">
+								<span class="icon-box">
+									<i class="icon icon-chevron_left"></i>
+								</span>
+							</button>
+
+							<div class="page_btn_wrap">
+								<button type="button" class="page_btn active" aria-label="1페이지" aria-current="page">1</button>
+								<button type="button" class="page_btn" aria-label="2페이지">2</button>
+							</div>
+
+							<button type="button" class="arrow_btn arrow_prev">
+								<span class="icon-box">
+									<i class="icon icon-chevron_right"></i>
+								</span>
+							</button>
+							</div>
+						</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  
+      <script>loadAdminMenu();</script>
+   </body>
+</html>

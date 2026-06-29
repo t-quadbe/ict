@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어 | 관리자 계정 관리</title>
+      <meta name="description" content="인천 ICT 이노베이션스퀘어 관리자 시스템">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/admin.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+   <body>
+      <div class="admin-wrap">
+         <div class="side-wrap" id="menu"></div>
+
+         <div class="main">
+            <header class="flex w-full">
+               <div class="breadcrumb">
+                  <a href="adminBaseSet.html">관리자 설정</a>
+                  <span class="icon-box s16"><i class="icon icon-chevron_right"></i></span>
+                  <span>관리자 계정 관리</span>
+               </div>
+               <div class="btn_wrap">
+                  <button type="button" class="btn btn-xs btn-text">ICT 메인페이지</button>
+                  <button type="button" class="btn btn-xs btn-black">로그아웃</button>
+               </div>
+            </header>
+
+            <div class="main_wrap">
+               <div class="inner2">
+                  <div class="main_tit">
+                     <h2>관리자 계정 관리</h2>
+                  </div>
+                  <div class="sect_cont">
+                     <div class="form_table">
+                        <table class="table_form">
+                           <tbody>
+                              <tr>
+                                 <th>아이디 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="flex align_center gap8">
+                                       <input type="text" class="inp_st1" placeholder="아이디를 입력해주세요" style="max-width:28rem">
+                                       <button type="button" class="btn btn-sm btn-line">중복확인</button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>비밀번호 <span class="req_mark">*</span></th>
+                                 <td><input type="password" class="inp_st1 wd100" placeholder="비밀번호를 입력해주세요"></td>
+                              </tr>
+                              <tr>
+                                 <th>비밀번호 확인 <span class="req_mark">*</span></th>
+                                 <td><input type="password" class="inp_st1 wd100" placeholder="비밀번호를 입력해주세요"></td>
+                              </tr>
+                              <tr>
+                                 <th>부서명 <span class="req_mark">*</span></th>
+                                 <td><input type="text" class="inp_st1 wd100" placeholder="부서명을 입력해주세요"></td>
+                              </tr>
+                              <tr>
+                                 <th>이름 <span class="req_mark">*</span></th>
+                                 <td><input type="text" class="inp_st1 wd100" placeholder="이름을 입력해주세요"></td>
+                              </tr>
+                              <tr>
+                                 <th>연락처 <span class="req_mark">*</span></th>
+                                 <td><input type="tel" class="inp_st1 wd100" placeholder="연락처를 입력해주세요"></td>
+                              </tr>
+                              <tr>
+                                 <th>이메일 <span class="req_mark">*</span></th>
+                                 <td><input type="email" class="inp_st1 wd100" placeholder="이메일 주소를 입력해주세요"></td>
+                              </tr>
+                              <tr>
+                                 <th>관리 권한 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="radio_wrap">
+                                       <label class="radio_st1"><input type="radio" name="role" value="super" checked> 슈퍼 관리자</label>
+                                    </div>
+                                    <div class="radio_wrap mt8">
+                                       <label class="radio_st1"><input type="radio" name="role" value="sub"> 부분 관리자 (
+                                          <label class="check_st1"><input type="checkbox"> 회원</label>
+                                          <label class="check_st1"><input type="checkbox"> 교육</label>
+                                          <label class="check_st1"><input type="checkbox"> 공간</label>
+                                          <label class="check_st1"><input type="checkbox"> 디바이스</label>
+                                          <label class="check_st1"><input type="checkbox"> 게시판</label>
+                                          )
+                                       </label>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="btn_wrap flex_end mt20">
+                        <button type="button" class="btn btn-md btn-line" onclick="history.back()">취소</button>
+                        <button type="button" class="btn btn-md btn-black">등록</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>loadAdminMenu();</script>
+   </body>
+</html>

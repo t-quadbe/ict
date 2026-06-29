@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어 | 프로그램 등록</title>
+      <meta name="description" content="인천 ICT 이노베이션스퀘어 관리자 시스템">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/admin.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+   <body>
+      <div class="admin-wrap">
+         <div class="side-wrap" id="menu"></div>
+
+         <div class="main">
+            <header class="flex w-full">
+               <div class="breadcrumb">
+                  <a href="adminProgramSet.html">프로그램 관리</a>
+                  <span class="icon-box s16"><i class="icon icon-chevron_right"></i></span>
+                  <span>프로그램 등록</span>
+               </div>
+               <div class="btn_wrap">
+                  <button type="button" class="btn btn-xs btn-text">ICT 메인페이지</button>
+                  <button type="button" class="btn btn-xs btn-black">로그아웃</button>
+               </div>
+            </header>
+
+            <div class="main_wrap">
+               <div class="inner2">
+                  <div class="main_tit">
+                     <h2>프로그램 등록</h2>
+                  </div>
+                  <div class="sect_cont">
+                     <div class="form_table">
+                        <table class="table_form">
+                           <tbody>
+                              <tr>
+                                 <th>구분 / 카테고리 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <select class="inp_st1">
+                                       <option>자기계발</option>
+                                       <option>취업</option>
+                                       <option>AI</option>
+                                    </select>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>교육(프로그램) 명 <span class="req_mark">*</span></th>
+                                 <td><input type="text" class="inp_st1 wd100" placeholder="제목을 입력해주세요."></td>
+                              </tr>
+                              <tr>
+                                 <th>대표 이미지 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="form_inp_row">
+                                       <input type="text" class="inp_st1" id="fileName" placeholder="선택된 파일 없음" readonly="">
+                                       <input type="file" class="inp_st1 hide" id="uploadFile">
+                                       <label class="btn btn-sub btn-sm" for="uploadFile">파일 업로드</label>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>신청 기간 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="date_box">
+                                       <input class="input_date inp_st1" type="date">
+                                       <p class="hyp">~</p>
+                                       <input class="input_date inp_st1" type="date">
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>교육 기간 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="date_box">
+                                       <input class="input_date inp_st1" type="date">
+                                       <p class="hyp">~</p>
+                                       <input class="input_date inp_st1" type="date">
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>교육 장소 <span class="req_mark">*</span></th>
+                                 <td><input type="text" class="inp_st1 wd100" placeholder="장소를 입력해주세요"></td>
+                              </tr>
+                              <tr>
+                                 <th>교육 내용 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <!-- 에디터 영역: 빈 div -->
+                                    <div class="editor_wrap" id="editor"></div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>상태</th>
+                                 <td>
+                                    <select class="inp_st1">
+                                       <option>모집중</option>
+                                       <option>모집종료</option>
+                                       <option>진행중</option>
+                                       <option>진행종료</option>
+                                    </select>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>등록일</th>
+                                 <td>-</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="btn_wrap flex_end mt20">
+                        <button type="button" class="btn btn-md btn-line" onclick="history.back()">취소</button>
+                        <button type="button" class="btn btn-md btn-black">등록</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>loadAdminMenu();</script>
+   </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어 | 회원 정보</title>
+      <meta name="description" content="인천 ICT 이노베이션스퀘어 관리자 시스템">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/admin.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+   <body>
+      <div class="admin-wrap">
+         <div class="side-wrap" id="menu"></div>
+
+         <div class="main">
+            <header class="flex w-full">
+               <div class="breadcrumb">
+                  <a href="adminUserSet.html">회원 관리</a>
+                  <span class="icon-box s16"><i class="icon icon-chevron_right"></i></span>
+                  <span>회원 정보</span>
+               </div>
+               <div class="btn_wrap">
+                  <button type="button" class="btn btn-xs btn-text">ICT 메인페이지</button>
+                  <button type="button" class="btn btn-xs btn-black">로그아웃</button>
+               </div>
+            </header>
+
+            <div class="main_wrap">
+               <div class="inner2">
+                  <div class="main_tit">
+                     <h2>회원 정보</h2>
+                  </div>
+                  <div class="sect_cont">
+                     <div class="form_table">
+                        <table class="table_form">
+                           <tbody>
+                              <tr>
+                                 <th>아이디(이메일)</th>
+                                 <td>kimincheon@gmail.com</td>
+                              </tr>
+                              <tr>
+                                 <th>비밀번호</th>
+                                 <td>kimincheon@gmail.com</td>
+                              </tr>
+                              <tr>
+                                 <th>이름</th>
+                                 <td>김인천</td>
+                              </tr>
+                              <tr>
+                                 <th>생년월일</th>
+                                 <td>19990109</td>
+                              </tr>
+                              <tr>
+                                 <th>성별</th>
+                                 <td>
+                                    <div class="radio_wrap">
+                                       <label class="radio_st1"><input type="radio" name="gender" checked> 남성</label>
+                                       <label class="radio_st1"><input type="radio" name="gender"> 여성</label>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>연락처</th>
+                                 <td>010-1234-5678</td>
+                              </tr>
+                              <tr>
+                                 <th>수신동의</th>
+                                 <td>
+                                    <div class="radio_wrap">
+                                       <label class="radio_st1"><input type="radio" name="agree" checked> 동의</label>
+                                       <label class="radio_st1"><input type="radio" name="agree"> 비동의</label>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>상태</th>
+                                 <td><span class="tag tag-blue">정상</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="btn_wrap flex_end mt20">
+                        <button type="button" class="btn btn-sm btn-line" onclick="history.back()">취소</button>
+                        <button type="button" class="btn btn-sm btn-black">저장</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>loadAdminMenu();</script>
+   </body>
+</html>

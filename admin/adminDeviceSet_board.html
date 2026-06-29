@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어 | 디바이스 등록</title>
+      <meta name="description" content="인천 ICT 이노베이션스퀘어 관리자 시스템">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/admin.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+   <body>
+      <div class="admin-wrap">
+         <div class="side-wrap" id="menu"></div>
+
+         <div class="main">
+            <header class="flex w-full">
+               <div class="breadcrumb">
+                  <a href="adminDeviceSet.html">디바이스 관리</a>
+                  <span class="icon-box s16"><i class="icon icon-chevron_right"></i></span>
+                  <span>디바이스 등록</span>
+               </div>
+               <div class="btn_wrap">
+                  <button type="button" class="btn btn-xs btn-text">ICT 메인페이지</button>
+                  <button type="button" class="btn btn-xs btn-black">로그아웃</button>
+               </div>
+            </header>
+
+            <div class="main_wrap">
+               <div class="inner2">
+                  <div class="main_tit">
+                     <h2>디바이스 등록</h2>
+                  </div>
+                  <div class="sect_cont">
+                     <div class="form_table">
+                        <table class="table_form">
+                           <tbody>
+                              <tr>
+                                 <th>카테고리 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <select class="inp_st1">
+                                       <option>노트북</option>
+                                       <option>태블릿</option>
+                                       <option>모바일</option>
+                                    </select>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>용도 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <select class="inp_st1">
+                                       <option>노트북</option>
+                                       <option>교육용</option>
+                                       <option>업무용</option>
+                                    </select>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>디바이스명 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <input type="text" class="inp_st1 wd100" placeholder="디바이스 명을 입력해주세요">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>대표 이미지 <span class="req_mark">*</span></th>
+                                 <td>
+                                   <div class="form_inp_row">
+                                       <input type="text" class="inp_st1" id="fileName" placeholder="선택된 파일 없음" readonly="">
+                                       <input type="file" class="inp_st1 hide" id="uploadFile">
+                                       <label class="btn btn-sub btn-sm" for="uploadFile">파일 업로드</label>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <!-- 개별 제품 행 등록 테이블 -->
+                     <div class="table_wrap wd100 mt20">
+                        <table class="table_st2">
+                           <thead>
+                              <tr>
+                                 <th>제품 번호</th>
+                                 <th>관리번호 <span class="req_mark">*</span></th>
+                                 <th class="c20">등록자 <span class="req_mark">*</span></th>
+                              </tr>
+                           </thead>
+                           <tbody id="deviceRows">
+                              <tr>
+                                 <td>제품 1</td>
+                                 <td><input type="text" class="inp_st1 wd100" value="ICT-NB-001"></td>
+                                 <td><input type="text" class="inp_st1 wd100" value="김인천"></td>
+                              </tr>
+                              <tr>
+                                 <td>제품 2</td>
+                                 <td><input type="text" class="inp_st1 wd100" value="ICT-NB-002"></td>
+                                 <td><input type="text" class="inp_st1 wd100" value="김인천"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <div class="btn_wrap mt10">
+                           <button type="button" class="btn btn-sm btn-line" id="addRow">
+                              셀 추가 +
+                           </button>
+                        </div>
+                     </div>
+
+                     <div class="btn_wrap flex_end mt20">
+                        <button type="button" class="btn btn-md btn-line" onclick="history.back()">취소</button>
+                        <button type="button" class="btn btn-md btn-black">등록</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         loadAdminMenu();
+         // 셀 추가
+         document.getElementById('addRow').addEventListener('click', function() {
+            var tbody = document.getElementById('deviceRows');
+            var rowCount = tbody.rows.length + 1;
+            var tr = document.createElement('tr');
+            tr.innerHTML = '<td>제품 ' + rowCount + '</td>'
+               + '<td><input type="text" class="inp_st1 wd100" placeholder="ICT-NB-00' + rowCount + '"></td>'
+               + '<td><input type="text" class="inp_st1 wd100" placeholder="담당자"></td>';
+            tbody.appendChild(tr);
+         });
+      </script>
+   </body>
+</html>

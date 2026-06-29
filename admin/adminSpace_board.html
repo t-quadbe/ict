@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어 | 공간 신청 상세</title>
+      <meta name="description" content="인천 ICT 이노베이션스퀘어 관리자 시스템">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/admin.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+   <body>
+      <div class="admin-wrap">
+         <div class="side-wrap" id="menu"></div>
+
+         <div class="main">
+            <header class="flex w-full">
+               <div class="breadcrumb">
+                  <a href="adminSpace.html">공간 신청 내역</a>
+                  <span class="icon-box s16"><i class="icon icon-chevron_right"></i></span>
+                  <span>신청 상세</span>
+               </div>
+               <div class="btn_wrap">
+                  <button type="button" class="btn btn-xs btn-text">ICT 메인페이지</button>
+                  <button type="button" class="btn btn-xs btn-black">로그아웃</button>
+               </div>
+            </header>
+
+            <div class="main_wrap">
+               <div class="inner2">
+                  <div class="main_tit">
+                     <h2>공간 신청 상세</h2>
+                  </div>
+                  <div class="sect_cont">
+
+                     <!-- 신청 정보 -->
+                     <div class="form_table">
+                        <table class="table_form">
+                           <tbody>
+                              <tr>
+                                 <th>거점</th>
+                                 <td>미추홀 교육장</td>
+                              </tr>
+                              <tr>
+                                 <th>공간명</th>
+                                 <td>커뮤니티 라운지</td>
+                              </tr>
+                              <tr>
+                                 <th>신청자</th>
+                                 <td>
+                                    <span>이낭동</span>
+                                    <span class="ml10">namdong@gmail.com</span>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>신청 목적</th>
+                                 <td>회의</td>
+                              </tr>
+                              <tr>
+                                 <th>사용 예약일</th>
+                                 <td>2026-06-30</td>
+                              </tr>
+                              <tr>
+                                 <th>예약 시간</th>
+                                 <td>09:00 ~ 11:00</td>
+                              </tr>
+                              <tr>
+                                 <th>신청일</th>
+                                 <td>2026-06-12</td>
+                              </tr>
+                              <tr>
+                                 <th>신청 내용</th>
+                                 <td class="td_content">팀 회의 목적으로 커뮤니티 라운지를 사용하고자 신청합니다. 참석 인원은 총 8명이며, 노트북 및 프레젠테이션 장비를 활용할 예정입니다.</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <!-- 처리 정보 -->
+                     <div class="form_table mt20">
+                        <table class="table_form">
+                           <tbody>
+                              <tr>
+                                 <th>처리 상태</th>
+                                 <td>
+                                    <select class="inp_st1">
+                                       <option value="accept">승인 완료</option>
+                                       <option value="reject">반려</option>
+                                       <option value="cancel">취소</option>
+                                    </select>
+                                    <span class="txt_info ml10">* 반려 시 아래 사유를 반드시 입력해주세요</span>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>처리 사유</th>
+                                 <td><textarea class="inp_st1 wd100" rows="4" placeholder="반려 또는 취소 사유를 입력해주세요 (승인 시 생략 가능)"></textarea></td>
+                              </tr>
+                              <tr>
+                                 <th>승인자</th>
+                                 <td>관리자</td>
+                              </tr>
+                              <tr>
+                                 <th>처리일</th>
+                                 <td>2026-06-12</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <div class="btn_wrap flex_end mt20">
+                        <button type="button" class="btn btn-md btn-line" onclick="history.back()">목록</button>
+                        <button type="button" class="btn btn-md btn-black">저장</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>loadAdminMenu();</script>
+   </body>
+</html>

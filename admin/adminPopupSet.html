@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어 | 팝업 관리</title>
+      <meta name="description" content="인천 ICT 이노베이션스퀘어 관리자 시스템">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/admin.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+
+   <body>
+		<div>
+			<div class="admin-wrap">
+         		<div class="side-wrap" id="menu"></div>
+
+				<div class="main">
+					<header class="flex w-full">
+						<div class="btn_wrap">
+							<button type="button" class="btn btn-xs btn-text">ICT 메인페이지</button>
+							<button type="button" class="btn btn-xs btn-black">로그아웃</button>
+						</div>
+					</header>
+
+					<div class="main_wrap">
+						<div class="inner2">
+							<div class="main_tit flex_between">
+								<h2>팝업 관리</h2>
+								<a href="adminPopupSet_board.html" class="btn btn-md btn-black">새 팝업 등록 <span class="icon-box"><i class="icon icon-add"></i></span></a>
+							</div>
+							<div class="sect_cont">
+								<div class="filter_box">
+									<div class="filter_row">
+										<label for="">검색어</label>
+										<div class="search_bar wd100">
+											<div class="inp_st1_search">
+												<input id="" name="" class="inp_st1 wd100" placeholder="검색어를 입력해주세요" type="text" maxlength="200">
+												<button type="button">검색</button>
+											</div>
+										</div>
+										<button type="button" class="btn btn-md btn-black">검색</button>
+									</div>
+								</div>
+
+								<div class="table_set">
+									<div class="flex align_end flex_between">
+										<div class="list_meta">
+											<span class="list_total">총 <strong>10</strong>건</span>
+										</div>
+										<a href="" type="file" class="btn btn-sm btn-line">
+											<span class="icon-box"><i class="icon icon-download"></i></span>엑셀 다운로드
+										</a>
+									</div>
+									<div class="table_wrap wd100 mt10">
+										<table class="table_st2">
+											<thead>
+												<tr>
+													<th class="c5"><input type="checkbox"></th>
+													<th class="c8">번호</th>
+													<th class="c10">썸네일</th>
+													<th class="">URL</th>
+													<th class="">노출 기간</th>
+													<th class="c10">노출 상태</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><input type="checkbox"></td>
+													<td>05</td>
+													<td>
+														<div class="thumb ratio1_1"><img src="/resource/images/ex_program.jpg" alt=""></div>
+													</td>
+													<td>
+														<div class="tit">
+															<a href="adminPopupSet_board.html" class="txt-over1">kimincheon@gmail.com</a>
+														</div>
+													</td>
+													<td>2026-05-04 ~ 2026-10-12</td>
+													<td><span class="tag tag-blue">노출중</span></td>
+												</tr>
+												<tr>
+													<td><input type="checkbox"></td>
+													<td>05</td>
+													<td>
+														<div class="thumb ratio1_1"><img src="/resource/images/ex_program.jpg" alt=""></div>
+													</td>
+													<td>
+														<div class="tit">
+															<a href="adminPopupSet_board.html" class="txt-over1">kimincheon@gmail.com</a>
+														</div>
+													</td>
+													<td>2026-05-04 ~ 2026-10-12</td>
+													<td><span class="tag tag-red">노출X</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+      <script>loadAdminMenu();</script>
+   </body>
+</html>

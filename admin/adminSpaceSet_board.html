@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>인천 ICT 이노베이션스퀘어 | 공간 등록</title>
+      <meta name="description" content="인천 ICT 이노베이션스퀘어 관리자 시스템">
+      <link rel="stylesheet" href="/resource/css/reset.css">
+      <link rel="stylesheet" href="/resource/css/layout.css">
+      <link rel="stylesheet" href="/resource/css/component.css">
+      <link rel="stylesheet" href="/resource/css/admin.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="/resource/js/common.js"></script>
+   </head>
+   <body>
+      <div class="admin-wrap">
+         <div class="side-wrap" id="menu"></div>
+
+         <div class="main">
+            <header class="flex w-full">
+               <div class="breadcrumb">
+                  <a href="adminSpaceSet.html">공간 관리</a>
+                  <span class="icon-box s16"><i class="icon icon-chevron_right"></i></span>
+                  <span>공간 등록</span>
+               </div>
+               <div class="btn_wrap">
+                  <button type="button" class="btn btn-xs btn-text">ICT 메인페이지</button>
+                  <button type="button" class="btn btn-xs btn-black">로그아웃</button>
+               </div>
+            </header>
+
+            <div class="main_wrap">
+               <div class="inner2">
+                  <div class="main_tit">
+                     <h2>공간 등록</h2>
+                  </div>
+                  <div class="sect_cont">
+                     <div class="form_table">
+                        <table class="table_form">
+                           <tbody>
+                              <tr>
+                                 <th>공간명 <span class="req_mark">*</span></th>
+                                 <td><input type="text" class="inp_st1 wd100" placeholder="공간명을 입력해주세요"></td>
+                              </tr>
+                              <tr>
+                                 <th>대표 이미지 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="form_inp_row">
+                                       <input type="text" class="inp_st1" id="fileName" placeholder="선택된 파일 없음" readonly="">
+                                       <input type="file" class="inp_st1 hide" id="uploadFile">
+                                       <label class="btn btn-sub btn-sm" for="uploadFile">파일 업로드</label>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>수용인원 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="flex align_center gap8">
+                                       <input type="number" class="inp_st1" value="20" style="width:8rem">
+                                       <span>명</span>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>운영 요일 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="checkbox_wrap">
+                                       <label class="check_st1"><input type="checkbox" checked> 월</label>
+                                       <label class="check_st1"><input type="checkbox" checked> 화</label>
+                                       <label class="check_st1"><input type="checkbox" checked> 수</label>
+                                       <label class="check_st1"><input type="checkbox" checked> 목</label>
+                                       <label class="check_st1"><input type="checkbox" checked> 금</label>
+                                       <label class="check_st1"><input type="checkbox"> 토</label>
+                                       <label class="check_st1"><input type="checkbox"> 일</label>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>상태 <span class="req_mark">*</span></th>
+                                 <td>
+                                    <div class="radio_wrap">
+                                       <label class="radio_st1"><input type="radio" name="timeType" checked> 종일 (09:00 ~ 18:00)</label>
+                                       <label class="radio_st1"><input type="radio" name="timeType"> 오전 (09:00 ~ 12:00)</label>
+                                       <label class="radio_st1"><input type="radio" name="timeType"> 오후 (13:00 ~ 18:00)</label>
+                                       <label class="radio_st1"><input type="radio" name="timeType"> 직접 설정 (
+                                          <select class="inp_st1" style="width:10rem">
+                                             <option>09:00</option><option>10:00</option><option>11:00</option>
+                                          </select>
+                                          ~
+                                          <select class="inp_st1" style="width:10rem">
+                                             <option>18:00</option><option>17:00</option><option>16:00</option>
+                                          </select>
+                                          )
+                                       </label>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <th>기타 <span class="req_mark">*</span></th>
+                                 <td><input type="text" class="inp_st1 wd100" placeholder="메모"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="btn_wrap flex_end mt20">
+                        <button type="button" class="btn btn-sm btn-line" onclick="history.back()">취소</button>
+                        <button type="button" class="btn btn-sm btn-black">등록</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>loadAdminMenu();</script>
+   </body>
+</html>
