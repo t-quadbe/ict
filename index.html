@@ -10,25 +10,178 @@
       <meta property="og:url" content="">
       <meta property="og:title" content="인천 ICT 이노베이션스퀘어">
       <meta property="og:description" content="인천 ICT 이노베이션스퀘어는 AI, 블록체인 등 4차 산업 핵심 기술 인재 양성을 위한 전문 교육과 취업 지원 서비스를 제공합니다.">
-      <meta property="og:image" content="resource/images/main_thumb.webp">
+      <meta property="og:image" content="./resource/images/main_thumb.webp">
       <meta name="twitter:card" content="summary_large_image">
 
-      <link rel="shortcut icon" href="resource/images/favicon.ico" type="image/x-icon">
-      <link rel="stylesheet" href="resource/css/reset.css">
-      <link rel="stylesheet" href="resource/css/layout.css">
-      <link rel="stylesheet" href="resource/css/component.css">
-      <link rel="stylesheet" href="resource/css/index.css">
+      <link rel="shortcut icon" href="./resource/images/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="./resource/css/reset.css">
+      <link rel="stylesheet" href="./resource/css/layout.css">
+      <link rel="stylesheet" href="./resource/css/component.css">
+      <link rel="stylesheet" href="./resource/css/index.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-      <script src="resource/js/common.js"></script>
+      <script src="./resource/js/common.js"></script>
    </head>
 
    <body>
       <div id="wrap" class="is-main-page">
          <!-- header -->
-         <header id="hd"></header>
+         <header id="hd">
+            <div class="header">
+               <div class="header_top">
+                  <div class="inner2">
+                     <div class="header_top_left">
+                        <h1 class="logo">
+                           <a title="인천 ICT 이노베이션스퀘어" href="/index.html"><img src="./resource/images/ict-logo-navy.svg" alt="인천 ICT 이노베이션스퀘어"></a>
+                        </h1>
+                     </div>
+                     <div class="header_top_center">
+                        <div class="main_nav">
+                           <nav>
+                              <ul class="nav_list">
+                                 <li class="nav_item">
+                                    <a href="/ict/intro.html">ICT 콤플렉스</a>
+                                 </li>
+                                 <li class="nav_item">
+                                    <a href="/space/space.html">공간·디바이스</a>
+                                 </li>
+                                 <li class="nav_item">
+                                    <a href="/program/program.html">프로그램</a>
+                                 </li>
+                                 <li class="nav_item">
+                                    <a href="/community/notice.html">커뮤니티</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                     <div class="header_top_right">
+                        <div class="header_action_list">
+                           <a href="/login.html" class="btn btn-sm btn-round btn-line"><span class="btn_wrap"><span class="btn_text">로그인</span></span></a>
+                           <a href="/signup.html" class="btn btn-sm btn-round btn-black"><span class="btn_wrap"><span class="btn_text">회원가입</span></span></a>
+
+                           <!-- 로그인 후 버튼변경 -->
+                           <a href="/my/profile.html" class="btn btn-sm btn-round btn-main">
+                              <span class="btn_wrap">
+                                 <span class="icon-box"><i class="icon icon-user"></i></span>
+                                 <span class="btn_text">김인천 님</span>
+                              </span>
+                           </a>
+                           <a href="/login.html" class="btn btn-sm btn-round btn-line"><span class="btn_wrap"><span class="btn_text">로그아웃</span></span></a>
+                        </div>
+                     </div>
+
+                     <!-- 햄버거 버튼 (모바일) -->
+                     <button class="hamburger_btn" id="hamburgerBtn" aria-label="메뉴 열기" aria-expanded="false">
+                        <span class="hamburger_line"></span>
+                        <span class="hamburger_line"></span>
+                        <span class="hamburger_line"></span>
+                     </button>
+                  </div>
+               </div>
+
+               <div class="header_btm">
+                  <div class="mega_container">
+                     <!-- ict 소개 -->
+                     <div class="mega_col mega_col_1">
+                        <ul class="mega_list">
+                           <li class="mega_item"><a href="/ict/intro.html">인천 ICT 이노베이션 스퀘어</a></li>
+                           <li class="mega_item"><a href="/ict/education.html">교육장 소개</a></li>
+                           <li class="mega_item"><a href="/ict/guide.html">운영 안내</a></li>
+                           <li class="mega_item"><a href="/ict/location.html">오시는 길</a></li>
+                        </ul>
+                     </div>
+                     <!-- 공간/디바이스 -->
+                     <div class="mega_col mega_col_2">
+                        <ul class="mega_list">
+                           <li class="mega_item"><a href="/space/space.html">공간 예약</a></li>
+                           <li class="mega_item"><a href="/space/device.html">디바이스 대여</a></li>
+                        </ul>
+                     </div>
+                     <!-- 교육프로그램 -->
+                     <div class="mega_col mega_col_3">
+                        <ul class="mega_list">
+                           <li class="mega_item"><a href="/program/program.html">프로그램</a></li>
+                        </ul>
+                     </div>
+                     <!-- 커뮤니티 -->
+                     <div class="mega_col mega_col_4">
+                        <ul class="mega_list">
+                           <li class="mega_item"><a href="/community/notice.html">공지사항</a></li>
+                           <li class="mega_item"><a href="/community/archive.html">자료실</a></li>
+                           <li class="mega_item"><a href="/community/inquiry.html">온라인 문의</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <!-- 모바일 메뉴 -->
+         <div class="mobile_drawer" id="mobileDrawer">
+            <div class="mobile_drawer_inner">
+               <div class="mobile_drawer_head">
+                  <h1 class="logo">
+                     <a href="/index.html"><img src="./resource/images/ict-logo-navy.svg" alt="인천 ICT 이노베이션스퀘어"></a>
+                  </h1>
+                  <button class="mobile_drawer_close" id="drawerClose" aria-label="메뉴 닫기">
+                     <span class="icon-box"><i class="icon icon-x"></i></span>
+                  </button>
+               </div>
+               <nav class="mobile_nav">
+                  <ul class="mobile_nav_list">
+                     <li class="mobile_nav_item">
+                        <button class="mobile_nav_toggle">ICT 콤플렉스 <span class="icon-box"><i class="icon icon-chevron_up"></i></span></button>
+                        <ul class="mobile_sub_list">
+                           <li><a href="/ict/intro.html">인천 ICT 이노베이션 스퀘어</a></li>
+                           <li><a href="/ict/education.html">교육장 소개</a></li>
+                           <li><a href="/ict/guide.html">운영 안내</a></li>
+                           <li><a href="/ict/location.html">오시는 길</a></li>
+                        </ul>
+                     </li>
+                     <li class="mobile_nav_item">
+                        <button class="mobile_nav_toggle">공간·디바이스 <span class="icon-box"><i class="icon icon-chevron_up"></i></span></button>
+                        <ul class="mobile_sub_list">
+                           <li><a href="/space/space.html">공간 예약</a></li>
+                           <li><a href="/space/device.html">디바이스 대여</a></li>
+                        </ul>
+                     </li>
+                     <li class="mobile_nav_item">
+                        <button class="mobile_nav_toggle">프로그램 <span class="icon-box"><i class="icon icon-chevron_up"></i></span></button>
+                        <ul class="mobile_sub_list">
+                           <li><a href="/program/program.html">프로그램</a></li>
+                        </ul>
+                     </li>
+                     <li class="mobile_nav_item">
+                        <button class="mobile_nav_toggle">커뮤니티 <span class="icon-box"><i class="icon icon-chevron_up"></i></span></button>
+                        <ul class="mobile_sub_list">
+                           <li><a href="/community/notice.html">공지사항</a></li>
+                           <li><a href="/community/archive.html">자료실</a></li>
+                           <li><a href="/community/inquiry.html">온라인 문의</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="mobile_drawer_footer">
+                  <a href="/login.html" class="btn btn-md btn-line" >로그인</a>
+                  <a href="/signup.html" class="btn btn-md btn-black">회원가입</a>
+               </div>
+
+               <!-- 로그인 후 -->
+               <div class="mobile_drawer_footer">
+                  <a href="/my/profile.html" class="btn btn-md btn-main">
+                     <span class="btn_wrap">
+                        <span class="icon-box"><i class="icon icon-user"></i></span>
+                        <span class="btn_text">김인천 님</span>
+                     </span>
+                  </a>
+                  <a href="/login.html" class="btn btn-md btn-line"><span class="btn_wrap"><span class="btn_text">로그아웃</span></span></a>
+               </div>
+            </div>
+         </div>
+         <div class="mobile_overlay" id="mobileOverlay"></div>
 
 
          
@@ -51,7 +204,7 @@
                         </div>
                           <div class="hero_back_wrap">
                            <video class="hero_video" muted playsinline autoplay loop preload="auto" aria-hidden="true">
-                              <source src="/resource/images/video/ICT_intro.webm" type="video/webm">
+                              <source src="./resource/images/video/ICT_intro.webm" type="video/webm">
                            </video>
                         </div>
                      </div>
@@ -65,25 +218,25 @@
                            <ul class="quick_list">
                               <li class="quick_item">
                                  <a href="/space/space.html">
-                                    <span class="icon-box"><img src="/resource/images/icon/place_glass.svg" alt="공간예약"></span>
+                                    <span class="icon-box"><img src="./resource/images/icon/place_glass.svg" alt="공간예약"></span>
                                     <span>공간 예약</span>
                                  </a>
                               </li>
                               <li class="quick_item">
                                  <a href="/space/device.html">
-                                    <span class="icon-box"><img src="/resource/images/icon/device_glass.svg" alt="디바이스대여"></span>
+                                    <span class="icon-box"><img src="./resource/images/icon/device_glass.svg" alt="디바이스대여"></span>
                                     <span>디바이스 대여</span>
                                  </a>
                               </li>
                               <li class="quick_item">
                                  <a href="/program/program.html">
-                                    <span class="icon-box"><img src="/resource/images/icon/book_glass.svg" alt="프로그램 신청"></span>
+                                    <span class="icon-box"><img src="./resource/images/icon/book_glass.svg" alt="프로그램 신청"></span>
                                     <span>프로그램 신청</span>
                                  </a>
                               </li>
                               <li class="quick_item">
                                  <a href="/ict/guide.html">
-                                    <span class="icon-box"><img src="/resource/images/icon/docs_glass.svg" alt="이용가이드"></span>
+                                    <span class="icon-box"><img src="./resource/images/icon/docs_glass.svg" alt="이용가이드"></span>
                                     <span>ICT 이용가이드</span>
                                  </a>
                               </li>
@@ -106,18 +259,18 @@
                         
                         <div class="hub_box">
                            <div class="hub_ict">
-                              <img src="/resource/images/mainHub_ict.png" alt="인천 ICT 이노베이션 스퀘어">
+                              <img src="./resource/images/mainHub_ict.png" alt="인천 ICT 이노베이션 스퀘어">
                            </div>
 
                            <div class="hub_list">
                               <a href="/ict/location.html#namdong" class="hub_item hub_1">
-                                 <img src="/resource/images/mainHub_namdong.png" alt="남동 ICT 콤플렉스">
+                                 <img src="./resource/images/mainHub_namdong.png" alt="남동 ICT 콤플렉스">
                               </a>
                               <a href="/ict/location.html#michuhol" class="hub_item hub_2">
-                                 <img src="/resource/images/mainHub_michuhol.png" alt="미추홀 교육장">
+                                 <img src="./resource/images/mainHub_michuhol.png" alt="미추홀 교육장">
                               </a>
                               <a href="/ict/location.html#songdo" class="hub_item hub_3">
-                                 <img src="/resource/images/mainHub_songdo.png" alt="송도 교육장">
+                                 <img src="./resource/images/mainHub_songdo.png" alt="송도 교육장">
                               </a>
                            </div>
                         </div>
@@ -142,7 +295,7 @@
                            <li>
                               <a href="/program/programBoard.html" class="card card_st1">
                                  <div class="card_thumb ratio1_1">
-                                    <img src="/resource/images/thumbnail.jpg" alt="프로그램 포스터">
+                                    <img src="./resource/images/thumbnail.jpg" alt="프로그램 포스터">
                                  </div>
                                  <div class="card_info">
                                     <span class="tag tag-blue">모집중</span>
@@ -154,7 +307,7 @@
                            <li>
                               <a href="/program/programBoard.html" class="card card_st1">
                                  <div class="card_thumb ratio1_1">
-                                    <img src="/resource/images/thumbnail.jpg" alt="프로그램 포스터">
+                                    <img src="./resource/images/thumbnail.jpg" alt="프로그램 포스터">
                                  </div>
                                  <div class="card_info">
                                     <span class="tag tag-blue">모집중</span>
@@ -166,7 +319,7 @@
                            <li>
                               <a href="/program/programBoard.html" class="card card_st1">
                                  <div class="card_thumb ratio1_1">
-                                    <img src="/resource/images/thumbnail.jpg" alt="프로그램 포스터">
+                                    <img src="./resource/images/thumbnail.jpg" alt="프로그램 포스터">
                                  </div>
                                  <div class="card_info">
                                     <span class="tag tag-blue">모집중</span>
@@ -178,7 +331,7 @@
                            <li>
                               <a href="/program/programBoard.html" class="card card_st1">
                                  <div class="card_thumb ratio1_1">
-                                    <img src="/resource/images/thumbnail.jpg" alt="프로그램 포스터">
+                                    <img src="./resource/images/thumbnail.jpg" alt="프로그램 포스터">
                                  </div>
                                  <div class="card_info">
                                     <span class="tag tag-blue">모집중</span>
@@ -323,6 +476,31 @@
 
 
         <footer id="ft">
+            <div class="footer">
+               <div class="inner2">
+                  <div class="footer_top">
+                     <div class="footer_logo">
+                        <a href="/index.html"><img src="./resource/images/ict-logo-white.svg" alt="인천 ICT 이노베이션스퀘어"></a>
+                     </div>
+                     <div class="footer_link">
+                        <a class="footer_link_item" href="">이용약관</a>
+                        <a class="footer_link_item" href="">개인정보처리방침</a>
+                        <a class="footer_link_item" href="">영상정보처리기기 운영관리방침</a>
+                        <a class="footer_link_item" href="/ict/location.html">오시는길</a>
+                        <a class="footer_link_item" href="/community/inquiry.html">문의하기</a>
+                     </div>
+                  </div>
+                  <div class="footer_bottom">
+                     <div class="footer_info">인천광역시 연수구 갯벌로 12 미추홀타워 본관 2층<br><span>이메일 : sgc@itp.or.kr</span><span class="bar">|</span>전화 : 032-260-2105<br>© Incheon ICT Complex. All rights reserved.</div>
+
+                     <div class="footer_btn">
+                        <button type="button" class="icon-box st2 s46">
+                           <i class="icon icon-outlink"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </footer>
       </div>
    
@@ -347,42 +525,42 @@
                   <div class="swiper-slide">
                      <a href="/community/noticeBoard.html" class="popzone_card">
                         <div class="popzone_card_img">
-                           <img src="/resource/images/thumbnail.jpg" alt="팝업 이미지">
+                           <img src="./resource/images/thumbnail.jpg" alt="팝업 이미지">
                         </div>
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/community/noticeBoard.html" class="popzone_card">
                         <div class="popzone_card_img">
-                           <img src="/resource/images/thumbnail.jpg" alt="팝업 이미지">
+                           <img src="./resource/images/thumbnail.jpg" alt="팝업 이미지">
                         </div>
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/community/noticeBoard.html" class="popzone_card">
                         <div class="popzone_card_img">
-                           <img src="/resource/images/thumbnail.jpg" alt="팝업 이미지">
+                           <img src="./resource/images/thumbnail.jpg" alt="팝업 이미지">
                         </div>
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/community/noticeBoard.html" class="popzone_card">
                         <div class="popzone_card_img">
-                           <img src="/resource/images/thumbnail.jpg" alt="팝업 이미지">
+                           <img src="./resource/images/thumbnail.jpg" alt="팝업 이미지">
                         </div>
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/community/noticeBoard.html" class="popzone_card">
                         <div class="popzone_card_img">
-                           <img src="/resource/images/thumbnail.jpg" alt="팝업 이미지">
+                           <img src="./resource/images/thumbnail.jpg" alt="팝업 이미지">
                         </div>
                      </a>
                   </div>
                   <div class="swiper-slide">
                      <a href="/community/noticeBoard.html" class="popzone_card">
                         <div class="popzone_card_img">
-                           <img src="/resource/images/thumbnail.jpg" alt="팝업 이미지">
+                           <img src="./resource/images/thumbnail.jpg" alt="팝업 이미지">
                         </div>
                      </a>
                   </div>
