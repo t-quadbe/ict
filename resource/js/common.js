@@ -79,12 +79,12 @@ function initMobileMenu() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  loadHTML('hd', 'header.html', function () {
+  loadHTML('hd', '/ict/header.html', function () {
     initMegaMenu();
     initMobileMenu();
   });
 
-  loadHTML('ft', 'footer.html');
+  loadHTML('ft', '/ict/footer.html');
 });
 // 웹코딩 완료 후 코드 삭제 ----- !
 
