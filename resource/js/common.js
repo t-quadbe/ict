@@ -98,7 +98,7 @@ function loadAdminMenu(callback) {
     // 현재 파일명 추출 (예: adminUserSet.html → adminUserSet)
     const currentPage = location.pathname.split('/').pop().replace('.html', '');
 
-    fetch('adminMenu.html')
+    fetch('/ict/admin/adminMenu.html')
         .then(res => {
             if (!res.ok) throw new Error('메뉴 파일 로드 실패');
             return res.text();
