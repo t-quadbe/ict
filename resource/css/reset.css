@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+*,
+*::before,
+*::after {box-sizing: border-box;}
+  
+/* reset */
+html, body, div, span, h1, h2, h3, h4, h5, h6, address, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, header, footer, nav, section, p {
+	margin:0;padding:0;border:0;font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+html {font-size: 62.5%;}
+
+body {min-width:320px;line-height:1; font-size: 1.6rem; color:#444;letter-spacing:-.6px;-webkit-text-size-adjust:100%;}/* -webkit-text-size-adjust:100%; - 아이폰 가로화면에서 폰트 자동확대 방지 */
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+fieldset, img, abbr, acronym{ border:0 none; }
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+a {background-color:transparent;--webkit-text-decoration-skip:objects;text-decoration:none;color:#444;}
+a:not([href]):not([class]), a:not([href]):not([class]):hover {color:inherit;text-decoration:none;}
+a:active, a:hover {text-decoration:none;outline-width: 0;}
+b,strong {font-weight: bold;}
+
+label {cursor:text; display:inline-block;}
+legend, caption{position:absolute; visibility:hidden; width:0; height:0; overflow:hidden; font:0}
+img {max-width: 100%;vertical-align: middle;}
+svg {vertical-align: middle;}
+table th {text-align:center;vertical-align:middle;white-space:nowrap !important}
+table td {vertical-align:middle !important;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block}
+
+input, select {vertical-align:middle;}
+input {font-size:1.4rem;color:#444;border: 0; -webkit-appearance:none;-webkit-border-radius:0}
+textarea { resize: vertical;}
+select::placeholder {font-family: "Pretendard"; font-size: 1.4rem; color:#757575; opacity: 1;}
+input::placeholder {font-family: "Pretendard"; font-size: 1.4rem; color:#757575; opacity: 1;}
+textarea::placeholder {font-family: "Pretendard"; font-size: 1.4rem; color:#757575; opacity: 1;}
+input::-ms-input-placeholder {color:#757575; opacity: 1;}
+input::-webkit-input-placeholder {color:#757575; opacity: 1;}
+input::-moz-input-placeholder {color:#757575; opacity: 1;}
+input[type="checkbox"] {-webkit-appearance:checkbox;}
+input[type="radio"] {-webkit-appearance:radio;border-radius:8px;}
+
+
+/* mobile */
+@media only screen and (max-width: 1023px) {
+	html {font-size: 58%;}
+}
+
+@media only screen and (max-width: 767px) {
+	html {font-size: 56%;}
+}
+
+@media only screen and (max-width: 560px) {
+	/* html {font-size: 52%;} */
+}
